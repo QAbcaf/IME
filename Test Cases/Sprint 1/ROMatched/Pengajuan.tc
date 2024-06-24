@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Pengajuan</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>42ef9ebf-925e-4093-a3a1-5b7ab065b066</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>ddb3f796-132f-4bca-a714-5d4c9813fac8</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0f951d15-b347-4369-bc65-64d9e5ad4441</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9fae72f3-d1fb-49d9-9da6-3be7f3b191f9</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ddb3f796-132f-4bca-a714-5d4c9813fac8</id>
+      <masked>false</masked>
+      <name>isPengajuanMatch</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>0f951d15-b347-4369-bc65-64d9e5ad4441</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9fae72f3-d1fb-49d9-9da6-3be7f3b191f9</id>
+      <masked>false</masked>
+      <name>isBatal</name>
+   </variable>
+</TestCaseEntity>

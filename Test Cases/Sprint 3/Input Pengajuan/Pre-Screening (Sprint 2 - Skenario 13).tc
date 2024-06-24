@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Pre-Screening (Sprint 2 - Skenario 13)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>487e0548-4ba3-4da6-ad0e-ca3d39fc4da9</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54ceac92-633f-43ce-ab35-213ced6c15e7</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54ceac92-633f-43ce-ab35-213ced6c15e7</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>4 Konfirmasi BM (Simulasi)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>1de4f9e0-2aac-4d50-b0cc-67f89b229f5c</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>b2470419-cb51-4471-bd69-bd975f249a2b</id>
+      <iterationEntity>
+         <iterationType>SPECIFIC</iterationType>
+         <value>1</value>
+      </iterationEntity>
+      <testDataId>Data Files/Sprint5Matrix</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>b2470419-cb51-4471-bd69-bd975f249a2b</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>konsumen</value>
+      <variableId>f1271fea-563a-421c-b7e2-7cce2ae852bd</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f1271fea-563a-421c-b7e2-7cce2ae852bd</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Reject</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>452943b2-c31c-491a-b414-e134fb3c2e71</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>055f73de-b165-484c-85eb-c031dc4c54d9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>156f91eb-e076-4db9-a11b-f1df6979bd4c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bd8a3ce2-3e32-49cb-9069-29a15f959d40</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>055f73de-b165-484c-85eb-c031dc4c54d9</id>
+      <masked>false</masked>
+      <name>isRejectMatch</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>156f91eb-e076-4db9-a11b-f1df6979bd4c</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bd8a3ce2-3e32-49cb-9069-29a15f959d40</id>
+      <masked>false</masked>
+      <name>isBatal</name>
+   </variable>
+</TestCaseEntity>

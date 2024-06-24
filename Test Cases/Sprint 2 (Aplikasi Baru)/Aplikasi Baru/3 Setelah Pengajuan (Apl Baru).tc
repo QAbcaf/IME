@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>3 Setelah Pengajuan (Apl Baru)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>8a96991f-ea7f-4e40-9283-0c607cb413bd</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>71914792-4517-43f2-af33-a98a96ac2d3e</id>
+      <iterationEntity>
+         <iterationType>SPECIFIC</iterationType>
+         <value>1</value>
+      </iterationEntity>
+      <testDataId>Data Files/Sprint2Matrix</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>71914792-4517-43f2-af33-a98a96ac2d3e</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>konsumen</value>
+      <variableId>71b9e947-865e-4f6e-a405-f3c81e91d057</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>71b9e947-865e-4f6e-a405-f3c81e91d057</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

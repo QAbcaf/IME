@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Simulasi Summary (Skenario 10)</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>a56cd54b-52c1-4d6a-89fc-df9eff75100d</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>60d51261-b0f6-436d-8155-58984327bb1d</id>
+      <iterationEntity>
+         <iterationType>SPECIFIC</iterationType>
+         <value>1</value>
+      </iterationEntity>
+      <testDataId>Data Files/Sprint3Matrix</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>60d51261-b0f6-436d-8155-58984327bb1d</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>konsumen</value>
+      <variableId>9bb8b081-d5b3-498d-b42e-16df3910a93c</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9bb8b081-d5b3-498d-b42e-16df3910a93c</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

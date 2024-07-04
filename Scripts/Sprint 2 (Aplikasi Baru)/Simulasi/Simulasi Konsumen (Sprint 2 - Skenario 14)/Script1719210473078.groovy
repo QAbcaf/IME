@@ -154,4 +154,5 @@ WebUI.delay(1);
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'Bukti Tempat Tinggal') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-konsumen//button[text()=' Selanjutnya ']"]));
 
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'Konsumen Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE)
 

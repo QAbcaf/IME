@@ -276,7 +276,6 @@ switch (MatchingRO) {
 }
 
 // Input Pengajuan
-
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
 WebUI.delay(10)
@@ -341,6 +340,11 @@ for (data1 in searchData){
 
 WebUI.delay(1);
 
+//DateFunction
+def clickPrevious2() {
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='‹']"]))
+}
+
 stat = WebUI.getText(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='statusPerkawinan']/div[@class='value']"]));
 status = stat;
 println(status);
@@ -353,7 +357,8 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[3]"]));
 	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 	
-	WebUI.delay(1);
+	/*
+	WebUI.delay(2);
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='pasangan_nama'])"]));
 	WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='pasangan_nama'])"]));
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='pasangan_nama'])"]), SimulasiNamaPasangan);
@@ -366,11 +371,12 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@name='tanggalLahirPasangan']/following-sibling::a"]))
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//bs-datepicker-navigation-view//*[@class='current']"]))
 	
+	String[] monthNames2 = ["", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
 	String[] dobComponents2 = SimulasiTglLahirPasangan.split("/")
 	String day2 = dobComponents2[0]
 	int monthInteger2 = Integer.parseInt(dobComponents2[1])
 	int year2 = Integer.parseInt(dobComponents2[2].trim())
-	String month2 = monthNames[monthInteger2]
+	String month2 = monthNames2[monthInteger2]
 	 
 	int currentYear2 = Calendar.getInstance().get(Calendar.YEAR);
 	int difference2 = currentYear2 - year2;
@@ -384,7 +390,7 @@ if (stat == 'Married') {
 	}
 	 
 	for (int i = 0; i < boxesToGoBack2; i++) {
-		clickPrevious();
+		clickPrevious2();
 	}
 	 
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='" + year2 + "']"]))
@@ -396,6 +402,7 @@ if (stat == 'Married') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='" + day2 + "'])[1]"]))
 	}
 	
+	*/
 	if(SimulasiAlamatSama == 'yes') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSesuaiKonsumen']/following-sibling::span"]));
 	}
@@ -463,6 +470,7 @@ WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + 
 
 // Setelah Pre Screening
 if(SimulasiStatus == 'Single') {
+	WebUI.delay(10)
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Pre-Screening']"]));
 	WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Pre Screening') + '.png', FailureHandling.STOP_ON_FAILURE)
 } else if (SimulasiStatus == 'Married') {
@@ -470,6 +478,7 @@ if(SimulasiStatus == 'Single') {
 	WebUI.delay(7)
 	switch (MatchingPasangan) {
 		case 'Existing':
+			WebUI.delay(7)
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Matching Pasangan Existing') + '.png', FailureHandling.STOP_ON_FAILURE)
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-matching-pasangan//*[text()=' Pengajuan ']"]));
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '8 Hasil Matching Pasangan Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
@@ -480,6 +489,7 @@ if(SimulasiStatus == 'Single') {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-matching-pasangan//input[@value='pasangan_0']/following-sibling::span"]));
 			break;
 		case 'Pengajuan':
+			WebUI.delay(7)
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Matching Pasangan Existing') + '.png', FailureHandling.STOP_ON_FAILURE)
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-matching-pasangan//*[text()=' Pengajuan ']"]));
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '8 Hasil Matching Pasangan Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
@@ -490,6 +500,7 @@ if(SimulasiStatus == 'Single') {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-matching-pasangan//input[@value='pasangan_0']/following-sibling::span"]));
 			break;
 		case 'Not Match':
+			WebUI.delay(7)
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Matching Pasangan Existing') + '.png', FailureHandling.STOP_ON_FAILURE)
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-matching-pasangan//*[text()=' Pengajuan ']"]));
 			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '8 Hasil Matching Pasangan Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
@@ -498,7 +509,8 @@ if(SimulasiStatus == 'Single') {
 			break;
 		case 'Non RO':
 		default:
-			WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Pre Screening Matching Pasangan') + '.png', FailureHandling.STOP_ON_FAILURE)
+			WebUI.delay(7)
+			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '7 Hasil Pre Screening Matching Pasangan') + '.png', FailureHandling.STOP_ON_FAILURE)
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Pre-Screening']"]));
 			break;
 	}

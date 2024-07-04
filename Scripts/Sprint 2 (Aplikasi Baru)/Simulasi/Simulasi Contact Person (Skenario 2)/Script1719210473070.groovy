@@ -129,4 +129,5 @@ switch(CP_Showroom) {
 
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab CP') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]))
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab CP Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
 

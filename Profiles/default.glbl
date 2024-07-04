@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\DataRO'</initValue>
       <name>screenshotPathAplBaru</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\Sprint5\\Simulasi'</initValue>
+      <initValue>'\\Screenshot\\Sprint5\\Simulasi\\DataRO'</initValue>
       <name>screenshotSimulasi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

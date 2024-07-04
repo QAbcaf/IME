@@ -31,7 +31,6 @@ String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
 
 // ---------------- Pengajuan --------------------
-/*
 // Tab Konsumen 
 Map<String, Object> variableMap1 = [
 	'konsumen': konsumen,
@@ -104,6 +103,7 @@ for (String variableName : variablesToPass2) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi FAP (Sprint 2 - Skenario 15)'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
 
+/*
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,
@@ -207,7 +207,6 @@ for (String variableName : variablesToPass4) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
- */
 
 // Tab Loan Data
 Map<String, Object> variableMap5 = [
@@ -264,7 +263,6 @@ for (String variableName : variablesToPass5) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Loan Data (Skenario 6)'), variables5, FailureHandling.CONTINUE_ON_FAILURE)
 
-/*
 // Tab Penyimpangan
 Map<String, Object> variableMap6 = [
 	'konsumen': konsumen,

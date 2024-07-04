@@ -56,6 +56,8 @@ WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[te
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaIbuKandung'])[1]"]), nama_ibu_kandung);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaSID'])[1]"]), namaSID);
 
+WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatUtamaKTP']/following-sibling::span"]));
+
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='lamaTinggalTahun'])[1]"]), lama_tahun);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='lamaTinggalBulan'])[1]"]), lama_bulan);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='jumlahPertanggungan'])[1]"]), jumlah_tanggungan);
@@ -82,3 +84,4 @@ WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab FAP') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-fap//button[text()=' Selanjutnya ']"]));
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab FAP Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

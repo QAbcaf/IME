@@ -104,6 +104,7 @@ for (String variableName : variablesToPass2) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi FAP (Sprint 2 - Skenario 15)'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
 
+/*
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,
@@ -349,3 +350,5 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text(
 WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + 'Submit Berhasil') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
+
+*/

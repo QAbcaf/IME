@@ -30,8 +30,8 @@ String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
 
-// ---------------- Pengajuan --------------------
-
+// ---------------- Pengajuan ----------	----------
+/*
 // Tab Konsumen
 Map<String, Object> variableMap1 = [
 	'konsumen': konsumen,
@@ -103,8 +103,7 @@ for (String variableName : variablesToPass2) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi FAP (Sprint 2 - Skenario 15)'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
-
-/*
+*/
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,
@@ -138,6 +137,7 @@ for (String variableName : variablesToPass3) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Contact Person (Skenario 2)'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
+
 
 // Tab Matching Result
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
@@ -177,6 +177,7 @@ switch(konsumen) {
 WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18(2) Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
+
 
 // Tab Collateral
 Map<String, Object> variableMap4 = [
@@ -311,6 +312,7 @@ for (String variableName : variablesToPass7) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Summary (Skenario 10)'), variables7, FailureHandling.CONTINUE_ON_FAILURE)
 
+/*
 // Edit
 Map<String, Object> variableMap8 = [
 	'konsumen': konsumen,

@@ -42,18 +42,18 @@ def CPData = [
 	['bpkbNomor', Cl_BpkbNo],
 	['bpkbNomorMesin', Cl_NoMesin], 
 	['bpkbNomorRangka', Cl_NoRangka], 
+	['nomorPolisi', 'AB 123 CDE'], 
 ]
 
 for (data in CPData) {
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='${data[0]}']"]), data[1])
 }
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Matching ']"]))
 
 WebUI.delay(1)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Lihat Hasil Matching ']"]))
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Lihat Hasil Matching ']"]))
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Collateral (Hasil Matching)') + '.png', FailureHandling.STOP_ON_FAILURE);
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='prescreeningKendaraanModal']//a)[1]"]))
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='prescreeningKendaraanModal']//a)[1]"]))
 
 // STNK
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex gap-2 w-100']/div[1]//img"]))

@@ -50,10 +50,11 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-c
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@id='extension'])"]), CP_Prefix)
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//textarea[@id='alamat']"]), CP_Alamat)
 
+/*
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//*[text()='Kota/Kabupaten']"]))
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='searchInput']"]), CP_Kota);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${CP_Kota}']"]))
-
+*/
 def clickPrevious() {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='‹']"]))
 }
@@ -64,8 +65,8 @@ switch(CP_isPenjamin) {
 		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex']/label[1]"]))
 		
 		WebUI.delay(1)
-//		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-penjamin//*[@class='img-placeholder'])[1]"]))aa
-//		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-penjamin//*[@class='img-placeholder'])[1]"]))
+		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 		WebUI.delay(5)
 		
 		def PenjaminData = [

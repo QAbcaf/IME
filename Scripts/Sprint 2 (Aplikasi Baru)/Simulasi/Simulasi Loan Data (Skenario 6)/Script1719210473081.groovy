@@ -133,8 +133,9 @@ switch(JenisPengajuan) {
 		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch']"]))
 		  
 		  // Kalau dari awal belum ada datanya
-		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_Branch'])[3]"]))
-		  WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='creditProtectionFile']"]), bpkbPath, FailureHandling.OPTIONAL)
+		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_Branch'])[1]"]))
+		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='capture-option']"]))
+		  WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
 		  
 		  /*
 		  // Sudah ada datanya
@@ -152,6 +153,7 @@ switch(JenisPengajuan) {
 		 
 		 for(data in AsuransiLainnya) {
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='modal-body']//*[text()='${data[0]}']"]))
+			 WebUI.delay(1)
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='drawer-select show']//*[text()='${data[1]}']"]))
 		 }
 		 

@@ -117,5 +117,5 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='sl
 
 // Selanjutnya
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Penyimpangan') + '.png', FailureHandling.STOP_ON_FAILURE);
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Selanjutnya ' and @_ngcontent-ng-c679326567='']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[text()=' Selanjutnya '])[3]"]))
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Penyimpangan Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

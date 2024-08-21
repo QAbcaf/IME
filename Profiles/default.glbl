@@ -11,12 +11,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20140607'</initValue>
+      <initValue>'20249001'</initValue>
       <name>usernameChecker</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20190903'</initValue>
+      <initValue>'20200508'</initValue>
       <name>usernameBM</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -36,7 +36,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru\\DanielBaru'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\UAT Sprint 6'</initValue>
       <name>screenshotPathAplBaru</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -76,7 +76,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\Simulasi\\DataRO'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Cek MA'</initValue>
       <name>screenshotSimulasi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -123,5 +123,20 @@
       <description></description>
       <initValue>'20200506'</initValue>
       <name>BMusername</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'mobile123+'</initValue>
+      <name>pwBM</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'checker'</initValue>
+      <name>loginRoleChecker</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Screenshot\\BM Checker\\Checker'</initValue>
+      <name>screenshotPathChecker</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

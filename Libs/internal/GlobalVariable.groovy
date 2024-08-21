@@ -129,6 +129,21 @@ public class GlobalVariable {
      */
     public static Object BMusername
      
+    /**
+     * <p></p>
+     */
+    public static Object pwBM
+     
+    /**
+     * <p></p>
+     */
+    public static Object loginRoleChecker
+     
+    /**
+     * <p></p>
+     */
+    public static Object screenshotPathChecker
+     
 
     static {
         try {
@@ -160,6 +175,9 @@ public class GlobalVariable {
             kkPath = selectedVariables['kkPath']
             loginRoleBM = selectedVariables['loginRoleBM']
             BMusername = selectedVariables['BMusername']
+            pwBM = selectedVariables['pwBM']
+            loginRoleChecker = selectedVariables['loginRoleChecker']
+            screenshotPathChecker = selectedVariables['screenshotPathChecker']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

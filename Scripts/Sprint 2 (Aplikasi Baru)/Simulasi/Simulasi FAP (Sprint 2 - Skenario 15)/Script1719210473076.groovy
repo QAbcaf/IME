@@ -84,4 +84,5 @@ WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab FAP') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-fap//button[text()=' Selanjutnya ']"]));
+WebUI.delay(3)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab FAP Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

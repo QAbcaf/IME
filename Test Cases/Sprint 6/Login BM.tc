@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Login BM</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>c298416a-d6f2-4062-9eb4-8c02c810f620</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>617c1ff8-7e41-4032-97c2-4131b0dd160a</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>617c1ff8-7e41-4032-97c2-4131b0dd160a</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

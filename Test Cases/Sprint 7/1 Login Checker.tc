@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>1 Login Checker</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>0fa56539-bff5-4a4f-be58-1d4547b399d5</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>bb74b3fd-2d35-4da6-b77b-dc8688ed44de</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>bb74b3fd-2d35-4da6-b77b-dc8688ed44de</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+</TestCaseEntity>

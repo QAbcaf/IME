@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>3 Skenario Pending</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>5e144276-a90b-45e9-8d6e-81dbcd792d67</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>0c2c2581-a5bd-4577-8ed6-0aa30057da59</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>18b7de6b-10bb-481d-adb4-5f1de5a58b38</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>591a2e14-3821-4fcc-8cf5-cc69f5b6c2f8</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'APPROVE UAT 288'</defaultValue>
+      <description></description>
+      <id>0c2c2581-a5bd-4577-8ed6-0aa30057da59</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+   <variable>
+      <defaultValue>'Pending'</defaultValue>
+      <description></description>
+      <id>18b7de6b-10bb-481d-adb4-5f1de5a58b38</id>
+      <masked>false</masked>
+      <name>pendingMessage</name>
+   </variable>
+   <variable>
+      <defaultValue>'Married'</defaultValue>
+      <description></description>
+      <id>591a2e14-3821-4fcc-8cf5-cc69f5b6c2f8</id>
+      <masked>false</masked>
+      <name>status</name>
+   </variable>
+</TestCaseEntity>

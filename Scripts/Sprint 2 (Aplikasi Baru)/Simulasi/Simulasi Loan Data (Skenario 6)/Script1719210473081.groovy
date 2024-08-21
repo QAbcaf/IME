@@ -193,6 +193,7 @@ switch(JenisPengajuan) {
 		 
 		 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '18 Tab Loan Data') + '.png', FailureHandling.STOP_ON_FAILURE);
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-loan//button[text()=' Selanjutnya ']"]))
+		 WebUI.delay(3)
 		 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '18 Tab Loan Data Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
 		break;
 	case 'Simulasi':
@@ -219,6 +220,7 @@ switch(JenisPengajuan) {
 		
 		WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18 Tab Loan Data') + '.png', FailureHandling.STOP_ON_FAILURE);
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-loan//button[text()=' Selanjutnya ']"]))
+		WebUI.delay(3)
 		WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18 Tab Loan Data Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
 		break;
 }

@@ -52,6 +52,7 @@ WebDriver driver = DriverFactory.getWebDriver()
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//a//*[text()='Konsumen']"]));
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[1]"]));
+
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-data-konsumen//img[@class='img-placeholder'])[1]"]), FailureHandling.OPTIONAL);
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), selfiePath, FailureHandling.OPTIONAL);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[text()='Verifikasi'])[1]"]), FailureHandling.OPTIONAL);
@@ -153,6 +154,6 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text(
 WebUI.delay(1);
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'Bukti Tempat Tinggal') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-konsumen//button[text()=' Selanjutnya ']"]));
-
+WebUI.delay(3)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'Konsumen Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE)
 

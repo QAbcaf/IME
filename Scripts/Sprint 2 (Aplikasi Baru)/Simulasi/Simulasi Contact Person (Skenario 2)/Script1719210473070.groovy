@@ -31,7 +31,7 @@ String ktpPathSingle = "${userDir}${GlobalVariable.ktpPathSingle}".replace("/", 
 String baseDir = System.getProperty('user.dir')
 
 // TAB CONTACT PERSON
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Contact Person & Penjamin']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='ECN & Penjamin']"]))
 
 // Data Entrys
 def CPData = [
@@ -128,7 +128,8 @@ switch(CP_Showroom) {
 		break;
 }
 
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab CP') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab ECN') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]))
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab CP Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.delay(3)
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab ECN Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
 

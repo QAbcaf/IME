@@ -81,7 +81,7 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='
 
 // Contact Person dan Penjamin
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[4]/div"]))
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Summary' + '/' + 'CP') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Summary' + '/' + 'ECN') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[4]//*[@class='ac-title display']"]))
 

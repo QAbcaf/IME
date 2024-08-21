@@ -44,12 +44,20 @@ def searchData = [
 	['Status Pernikahan', BaruStatus]
 ]
 
+void hideElements() {
+	WebUI.executeJavaScript("document.querySelector('.title-header').style.display='none'", null)
+}
+
+void showElements() {
+	WebUI.executeJavaScript("document.querySelector('.title-header').style.display=''", null)
+}
+
 String stat = '';
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[1]"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
-WebUI.delay(5)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[2]"]));
+WebUI.delay(15)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
 
 // NPWP Stuff
@@ -88,7 +96,7 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='Pilih Jenis Identitas']"]));
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${BaruJenisIdentitasPasangan}']"]));
 	WebUI.delay(2);
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[3]"]));
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 	
 	// Jika kode pos dan kabupaten belum terisi
@@ -137,7 +145,9 @@ switch(BaruLoanType) {
 		break;
 }
 
+hideElements();
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+showElements();
 
 // Setelah Pre Screening
 if(BaruStatus == 'Married') {

@@ -36,7 +36,7 @@ WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-prescreening-dukcapil//*[text()='Lihat Detail']"]));
 WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Detail KYC') + '.png', FailureHandling.STOP_ON_FAILURE)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='cancel-upload']"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@title='close']"]));
 
 // Watchlist Konsumen
 WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//app-prescreening-watchlist-konsumen//*[text()='Lihat Detail']"]));

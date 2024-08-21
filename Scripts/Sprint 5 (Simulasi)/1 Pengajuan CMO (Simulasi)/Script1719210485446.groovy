@@ -29,7 +29,7 @@ String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("/", "\\")
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
-
+/*
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Simulasi']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Paket']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//strong[text()='$SimulasiPaket']"]))
@@ -274,14 +274,13 @@ switch (MatchingRO) {
 			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '5 Hasil Matching Non RO') + '.png', FailureHandling.STOP_ON_FAILURE)
 			break;
 }
-
-
+*/
 // Input Pengajuan
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[1]"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[2]"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
 WebUI.delay(10)
 
@@ -355,10 +354,10 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${SimulasiJenisIdentitasPasangan}']"]));
 	
 	WebUI.delay(1);
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container ng-star-inserted'])[3]"]));
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 	
-	/*
+
 	WebUI.delay(2);
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='pasangan_nama'])"]));
 	WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='pasangan_nama'])"]));
@@ -403,7 +402,6 @@ if (stat == 'Married') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='" + day2 + "'])[1]"]))
 	}
 	
-	*/
 	if(SimulasiAlamatSama == 'yes') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSesuaiKonsumen']/following-sibling::span"]));
 	}

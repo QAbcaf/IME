@@ -18,14 +18,14 @@
       <variableId>e50bb668-442d-46fc-abc0-a631690d2ba1</variableId>
    </variableLinks>
    <variable>
-      <defaultValue>'APPROVE 201'</defaultValue>
+      <defaultValue>'APPROVE 619'</defaultValue>
       <description></description>
       <id>3ba03b20-263f-4d9f-8382-50da7d56fc32</id>
       <masked>false</masked>
       <name>konsumen</name>
    </variable>
    <variable>
-      <defaultValue>'7000201'</defaultValue>
+      <defaultValue>'7000619'</defaultValue>
       <description></description>
       <id>e50bb668-442d-46fc-abc0-a631690d2ba1</id>
       <masked>false</masked>

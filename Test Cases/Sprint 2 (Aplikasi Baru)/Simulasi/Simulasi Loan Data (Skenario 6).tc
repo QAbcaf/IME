@@ -368,6 +368,12 @@
       <value></value>
       <variableId>57e18b2b-058b-4506-a997-0d326a11da22</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f3af8af6-5cce-4d30-9dd6-97e0e3bb4cfb</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -780,5 +786,12 @@
       <id>57e18b2b-058b-4506-a997-0d326a11da22</id>
       <masked>false</masked>
       <name>L_TJH</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f3af8af6-5cce-4d30-9dd6-97e0e3bb4cfb</id>
+      <masked>false</masked>
+      <name>L_AsuransiLainnyaTenor</name>
    </variable>
 </TestCaseEntity>

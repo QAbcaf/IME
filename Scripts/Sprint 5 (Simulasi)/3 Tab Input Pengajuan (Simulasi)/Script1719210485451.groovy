@@ -58,6 +58,8 @@ Map<String, Object> variableMap1 = [
 	'hubungan_autodebet': K_HubAutoDebet,
 	'statusKepemilikanRumah': K_StatusKepemilikanRumah,
 	'status_rumah': K_StatusRumah,
+	'NPWP_Nomor' : K_nomorNPWP,
+	'BaruNPWPMilik' : K_NpwpMilik,
 ]
 
 List<String> variablesToPass1 = []
@@ -86,6 +88,7 @@ Map<String, Object> variableMap2 = [
 	'nomor_telepon': F_NomorTelepon,
 	'namaSID' : F_NamaSID,
 	'emailSama' : F_EmailSama,
+	'tujuanPembiayaan' : F_tujuanPembiayaan,
 ]
 
 List<String> variablesToPass2 = []

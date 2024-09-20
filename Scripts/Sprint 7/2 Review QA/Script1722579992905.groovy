@@ -24,11 +24,13 @@ String baseDir = System.getProperty('user.dir')
 void hideElements() {
     WebUI.executeJavaScript("document.querySelector('.account-header').style.display='none'", null)
     WebUI.executeJavaScript("document.querySelector('.button-container').style.display='none'", null)
+    WebUI.executeJavaScript("document.querySelector('.checker-detail-header').style.display='none'", null)
 }
 
 void showElements() {
     WebUI.executeJavaScript("document.querySelector('.account-header').style.display=''", null)
     WebUI.executeJavaScript("document.querySelector('.button-container').style.display=''", null)
+    WebUI.executeJavaScript("document.querySelector('.checker-detail-header').style.display=''", null)
 }
 
 void takeFullPageScreenshot(String path) {
@@ -65,7 +67,7 @@ takeFullPageScreenshot(baseDir + GlobalVariable.screenshotPathChecker + '/' + ko
 showElements()
 
 // Tab FAP
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//*[@class='checker-tab']/*[text()='FAP']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//*[text()='FAP']"]))
 WebUI.delay(3)
 takeFullPageScreenshot(baseDir + GlobalVariable.screenshotPathChecker + '/' + konsumen + '/' + '7 Tab FAP (Button).png')
 
@@ -83,7 +85,7 @@ if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath
 showElements()
 
 // Tab Matching Result
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//*[@class='checker-tab']/*[text()='MATCHING RESULT']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//*[text()='MATCHING RESULT']"]))
 takeFullPageScreenshot(baseDir + GlobalVariable.screenshotPathChecker + '/' + konsumen + '/' + '8 Tab Matching Result (Button).png')
 hideElements()
 takeFullPageScreenshot(baseDir + GlobalVariable.screenshotPathChecker + '/' + konsumen + '/' + '8 Tab Matching Result [1].png')

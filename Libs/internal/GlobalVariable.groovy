@@ -47,6 +47,11 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
+    public static Object screenshotSimulasi
+     
+    /**
+     * <p></p>
+     */
     public static Object ss2
      
     /**
@@ -78,11 +83,6 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object bpkbPath
-     
-    /**
-     * <p></p>
-     */
-    public static Object screenshotSimulasi
      
     /**
      * <p></p>
@@ -144,6 +144,16 @@ public class GlobalVariable {
      */
     public static Object screenshotPathChecker
      
+    /**
+     * <p></p>
+     */
+    public static Object fakturPath
+     
+    /**
+     * <p></p>
+     */
+    public static Object formAPath
+     
 
     static {
         try {
@@ -158,6 +168,7 @@ public class GlobalVariable {
             password = selectedVariables['password']
             IMEUrl = selectedVariables['IMEUrl']
             screenshotPathAplBaru = selectedVariables['screenshotPathAplBaru']
+            screenshotSimulasi = selectedVariables['screenshotSimulasi']
             ss2 = selectedVariables['ss2']
             screenshotSprint3 = selectedVariables['screenshotSprint3']
             ktpPath = selectedVariables['ktpPath']
@@ -165,7 +176,6 @@ public class GlobalVariable {
             selfie1Path = selectedVariables['selfie1Path']
             selfie2Path = selectedVariables['selfie2Path']
             bpkbPath = selectedVariables['bpkbPath']
-            screenshotSimulasi = selectedVariables['screenshotSimulasi']
             ktpPathPasangan = selectedVariables['ktpPathPasangan']
             ktpPathSingle = selectedVariables['ktpPathSingle']
             selfieEdit = selectedVariables['selfieEdit']
@@ -178,6 +188,8 @@ public class GlobalVariable {
             pwBM = selectedVariables['pwBM']
             loginRoleChecker = selectedVariables['loginRoleChecker']
             screenshotPathChecker = selectedVariables['screenshotPathChecker']
+            fakturPath = selectedVariables['fakturPath']
+            formAPath = selectedVariables['formAPath']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

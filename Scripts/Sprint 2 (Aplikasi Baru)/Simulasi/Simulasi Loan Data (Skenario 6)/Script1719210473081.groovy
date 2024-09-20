@@ -45,12 +45,12 @@ switch(JenisPengajuan) {
 		 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='paketDp']"]), L_PaketDP)
 		 
 		 def SimulasiData = [
-			 ['OTR', L_BaruOTR],
+			 ['otr', L_BaruOTR],
 			 ['uangMukaPersen', L_BaruPersenDP],
 			 ['residual', L_BaruResidual],
 			 ['tenor', L_BaruTenor],
 			 ['flatRate', L_BaruFlatRate],
-			 ['effectiveRate', L_BaruEffRate],
+//			 ['effectiveRate', L_BaruEffRate],
 			 ['biayaAdmin', L_BaruBiayaAdmin],
 			 ['biayaProvisi', L_BaruBiayaProvisi],
 		 ]
@@ -58,6 +58,7 @@ switch(JenisPengajuan) {
 		 for (data in SimulasiData) {
 			 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='${data[0]}'])[1]"]), data[1])
 		 }
+		 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@name='effectiveRate'])[1]"]), L_BaruEffRate)
 		 
 		 switch(L_BaruLoanType) {
 			 case 'In Advance':
@@ -147,14 +148,23 @@ switch(JenisPengajuan) {
 		 def AsuransiLainnya = [
 			 ['Asuransi Lainnya', L_BaruAsuransiLainnyaType],
 			 ['Maskapai', L_BaruAsuransiLainnyaMaskapai],
-		 //	['Tenor (Bulan)', SimulasiAsuransiLainnyaTenor],
+		 	 ['Tenor (Bulan)', L_AsuransiLainnyaTenor],
 			 ['Pertanggungan', L_BaruAsuransiLainnyaPertanggungan],
 		 ]
+		 
+		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='modal-body']//*[text()='Asuransi Lainnya']"]))
+		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='drawer-select show']//*[text()='CFP']"]))
 		 
 		 for(data in AsuransiLainnya) {
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='modal-body']//*[text()='${data[0]}']"]))
 			 WebUI.delay(1)
+			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='modal-body']//*[text()='${data[0]}']"]))
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='drawer-select show']//*[text()='${data[1]}']"]))
+		 }
+		 
+		 if(L_BaruAsuransiLainnyaType == 'TLP') {
+			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='modal-body']//*[text()='Upload File']"]))
+			 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
 		 }
 		 
 		 switch(L_BaruAsuransiLainnyaLoanType) {

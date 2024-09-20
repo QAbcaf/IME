@@ -29,7 +29,7 @@ String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("/", "\\")
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
-/*
+
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Simulasi']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Paket']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//strong[text()='$SimulasiPaket']"]))
@@ -274,15 +274,15 @@ switch (MatchingRO) {
 			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '5 Hasil Matching Non RO') + '.png', FailureHandling.STOP_ON_FAILURE)
 			break;
 }
-*/
+
 // Input Pengajuan
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
 WebUI.delay(10)
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
-WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
-WebUI.delay(10)
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
+//WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
+//WebUI.delay(10)
 
 switch(SimulasiTLKonsumen) {
 	case 'Dalam Negeri':

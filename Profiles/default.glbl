@@ -31,13 +31,18 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'https://sso-s3.idofocus.co.id:25443/#/login'</initValue>
+      <initValue>'https://s3-pentest.idofocus.co.id:25443/#/dashboard'</initValue>
       <name>IMEUrl</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru\\UAT Sprint 6'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Data UAT Cycle 3'</initValue>
       <name>screenshotPathAplBaru</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Data UAT Cycle 3'</initValue>
+      <name>screenshotSimulasi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -73,11 +78,6 @@
       <description></description>
       <initValue>'\\Assets\\bpkb.jpg'</initValue>
       <name>bpkbPath</name>
-   </GlobalVariableEntity>
-   <GlobalVariableEntity>
-      <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru\\Cek MA'</initValue>
-      <name>screenshotSimulasi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -136,7 +136,17 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\BM Checker\\Checker'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Data UAT Cycle 3'</initValue>
       <name>screenshotPathChecker</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Assets\\Faktur.png'</initValue>
+      <name>fakturPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Assets\\formA.jpg'</initValue>
+      <name>formAPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

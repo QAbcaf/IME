@@ -30,6 +30,7 @@ String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
 
+
 // ---------------- Pengajuan ----------	----------
 // Tab Konsumen
 Map<String, Object> variableMap1 = [
@@ -58,6 +59,8 @@ Map<String, Object> variableMap1 = [
 	'hubungan_autodebet': K_HubAutoDebet,
 	'statusKepemilikanRumah': K_StatusKepemilikanRumah,
 	'status_rumah': K_StatusRumah,
+	'NPWP_Nomor' : K_nomorNPWP,
+	'BaruNPWPMilik' : K_NpwpMilik,
 ]
 
 List<String> variablesToPass1 = []
@@ -74,7 +77,6 @@ for (String variableName : variablesToPass1) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Konsumen (Sprint 2 - Skenario 14)'), variables1, FailureHandling.CONTINUE_ON_FAILURE)
-
 // Tab FAP
 Map<String, Object> variableMap2 = [
 	'konsumen': konsumen,
@@ -86,6 +88,7 @@ Map<String, Object> variableMap2 = [
 	'nomor_telepon': F_NomorTelepon,
 	'namaSID' : F_NamaSID,
 	'emailSama' : F_EmailSama,
+	'tujuanPembiayaan' : F_tujuanPembiayaan,
 ]
 
 List<String> variablesToPass2 = []
@@ -136,11 +139,13 @@ for (String variableName : variablesToPass3) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Contact Person (Skenario 2)'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
-
-/*
+ 
 // Tab Matching Result
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
 WebUI.delay(10)
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Matching Result') + '.png', FailureHandling.STOP_ON_FAILURE);
+
+/*
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-konsumen//fa-icon)[1]"]))
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '17 Tab Matching Result Konsumen') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
@@ -176,7 +181,7 @@ switch(konsumen) {
 WebUI.delay(1)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18(2) Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
- */
+*/
 
 // Tab Collateral
 Map<String, Object> variableMap4 = [
@@ -213,7 +218,7 @@ for (String variableName : variablesToPass4) {
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
 
 // Tab Loan Data
-Map<String, Object> variableMap5 = [
+Map<String, Object> variableMap5 = [ 
 	'konsumen': konsumen,
 	'L_DetailTipeAsuransiAll': L_DetailTipeAsuransiAll,
 	'L_DetailTJHAll': L_DetailTJHAll,
@@ -249,7 +254,9 @@ Map<String, Object> variableMap5 = [
 	'L_BaruAsuransiLainnyaLoanType': L_BaruAsuransiLainnyaLoanType,
 	'L_BaruBiayaLainnyaFee': L_BaruBiayaLainnyaFee,
 	'L_BaruBiayaLainnyaType': L_BaruBiayaLainnyaType,
+	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
 	'L_TJH': L_TJH,
+	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
 ]
 
 List<String> variablesToPass5 = []
@@ -290,6 +297,7 @@ for (String variableName : variablesToPass6) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Penyimpangan (Skenario 8)'), variables6, FailureHandling.CONTINUE_ON_FAILURE)
+
 
 // Tab Summary
 Map<String, Object> variableMap7 = [

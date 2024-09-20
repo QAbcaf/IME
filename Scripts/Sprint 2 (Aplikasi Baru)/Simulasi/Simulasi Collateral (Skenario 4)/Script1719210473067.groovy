@@ -27,12 +27,16 @@ String selfiePath = "${userDir}${GlobalVariable.selfiePath}".replace("/", "\\")
 String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String stnkPath = "${userDir}${GlobalVariable.stnkPath}".replace("/", "\\")
+String fakturPath = "${userDir}${GlobalVariable.fakturPath}".replace("/", "\\")
+String formAPath = "${userDir}${GlobalVariable.formAPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
 
 // TAB Collateral
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Collateral']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch Dealer']"]))
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//*[text()='${Cl_Branch}']"]))
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_Branch)
+WebUI.delay(7)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]))
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//tab[@class='tab-pane active']//div[@class='row']//img"]))
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
@@ -56,11 +60,17 @@ WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru))
 //WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='prescreeningKendaraanModal']//a)[1]"]))
 
 // STNK
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex gap-2 w-100']/div[1]//img"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-2 w-100']/div[1]//img)[1]"]))
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), stnkPath);
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex gap-2 w-100']/div[2]//img"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-2 w-100']/div[2]//img)[1]"]))
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), stnkPath);
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-2 w-100']/div[1]//img)[3]"]))
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), formAPath);
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-2 w-100']/div[2]//img)[3]"]))
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), fakturPath);
 
 def ColateralDataSelect = [
 	['Merk', Cl_Merk],
@@ -73,6 +83,8 @@ for (data in ColateralDataSelect) {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='label is-required' and text()='${data[0]}']"]))
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='slide-up show']//*[text()='${data[1]}']"]))
 }
+
+WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='produktif']/following-sibling::span"]))
 
 def ColateralData = [
 	['tahun', Cl_Tahun],

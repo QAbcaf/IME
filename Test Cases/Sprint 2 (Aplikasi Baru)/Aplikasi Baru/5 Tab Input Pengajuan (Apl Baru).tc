@@ -10,7 +10,7 @@
       <id>5f546efe-15bf-420b-a612-c6ff0eb17cbc</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>5</value>
+         <value>7</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -1057,6 +1057,30 @@
       <type>DATA_COLUMN</type>
       <value>L_TJH</value>
       <variableId>7fead143-a889-403a-aa81-0b8b7c72de0a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_nomorNPWP</value>
+      <variableId>cdcace3f-e33f-45ad-b030-4f7d1e5904f2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_NpwpMilik</value>
+      <variableId>f7289433-4363-4b0d-9a09-ced39d2b4a21</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>F_tujuanPembiayaan</value>
+      <variableId>d3bec948-f4ba-4156-aa97-d8dacc9c3672</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_AsuransiLainnyaTenor</value>
+      <variableId>ea421a52-e36c-4a79-94d7-e576c75e4bf1</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -2275,5 +2299,33 @@
       <id>7fead143-a889-403a-aa81-0b8b7c72de0a</id>
       <masked>false</masked>
       <name>L_TJH</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cdcace3f-e33f-45ad-b030-4f7d1e5904f2</id>
+      <masked>false</masked>
+      <name>K_nomorNPWP</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f7289433-4363-4b0d-9a09-ced39d2b4a21</id>
+      <masked>false</masked>
+      <name>K_NpwpMilik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>d3bec948-f4ba-4156-aa97-d8dacc9c3672</id>
+      <masked>false</masked>
+      <name>F_tujuanPembiayaan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ea421a52-e36c-4a79-94d7-e576c75e4bf1</id>
+      <masked>false</masked>
+      <name>L_AsuransiLainnyaTenor</name>
    </variable>
 </TestCaseEntity>

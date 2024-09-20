@@ -356,6 +356,12 @@
       <value></value>
       <variableId>1a8f8505-5b59-4dd5-bf01-f7ddac57a56d</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>e8baf6db-980d-4e9a-9ef4-06c417c4259e</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -754,5 +760,12 @@
       <id>1a8f8505-5b59-4dd5-bf01-f7ddac57a56d</id>
       <masked>false</masked>
       <name>emailSama</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e8baf6db-980d-4e9a-9ef4-06c417c4259e</id>
+      <masked>false</masked>
+      <name>tujuanPembiayaan</name>
    </variable>
 </TestCaseEntity>

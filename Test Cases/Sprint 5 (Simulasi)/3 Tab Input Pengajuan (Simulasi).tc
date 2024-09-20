@@ -10,7 +10,7 @@
       <id>5f546efe-15bf-420b-a612-c6ff0eb17cbc</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>8</value>
+         <value>4</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -1057,6 +1057,24 @@
       <type>DATA_COLUMN</type>
       <value>L_TJH</value>
       <variableId>cb42f56f-444e-4074-b381-ea548f52feb6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_nomorNPWP</value>
+      <variableId>c35aacda-2c9a-43ee-9274-0a1442057a9f</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_NpwpMilik</value>
+      <variableId>537018ac-aba2-45e6-b09e-50315cf2aa20</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7cbf2c6c-c018-4550-a87d-e3a3d7979273</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -2275,5 +2293,26 @@
       <id>cb42f56f-444e-4074-b381-ea548f52feb6</id>
       <masked>false</masked>
       <name>L_TJH</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c35aacda-2c9a-43ee-9274-0a1442057a9f</id>
+      <masked>false</masked>
+      <name>K_nomorNPWP</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>537018ac-aba2-45e6-b09e-50315cf2aa20</id>
+      <masked>false</masked>
+      <name>K_NpwpMilik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7cbf2c6c-c018-4550-a87d-e3a3d7979273</id>
+      <masked>false</masked>
+      <name>variable_0</name>
    </variable>
 </TestCaseEntity>

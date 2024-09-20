@@ -57,18 +57,18 @@ String stat = '';
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
 WebUI.delay(15)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
-WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
+//WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
 
 // NPWP Stuff
-switch(BaruNPWPMilik) {
-	case 'konsumen':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='konsumen']/following-sibling::span"]));
-		break;
-	case 'pasangan':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='pasangan']/following-sibling::span"]));
-		break;
-}
+//switch(BaruNPWPMilik) {
+//	case 'konsumen':
+//		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='konsumen']/following-sibling::span"]));
+//		break;
+//	case 'pasangan':
+//		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='pasangan']/following-sibling::span"]));
+//		break;
+//}
 
 for (data1 in searchData){
 	WebUI.delay(1);

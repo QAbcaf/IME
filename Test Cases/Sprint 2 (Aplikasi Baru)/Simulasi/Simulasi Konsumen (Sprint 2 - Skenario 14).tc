@@ -338,6 +338,18 @@
       <value>statusKepemilikanRumah</value>
       <variableId>4fea9152-14ba-410e-9667-0050a12c8f7b</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>488cc923-5438-43ba-bc29-a03d567e387d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>f292264b-7487-40f6-b465-7c45ef0e3587</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -715,5 +727,19 @@
       <id>4fea9152-14ba-410e-9667-0050a12c8f7b</id>
       <masked>false</masked>
       <name>statusKepemilikanRumah</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>488cc923-5438-43ba-bc29-a03d567e387d</id>
+      <masked>false</masked>
+      <name>BaruNPWPMilik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f292264b-7487-40f6-b465-7c45ef0e3587</id>
+      <masked>false</masked>
+      <name>NPWP_Nomor</name>
    </variable>
 </TestCaseEntity>

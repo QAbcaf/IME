@@ -46,9 +46,9 @@ for (data in CPData) {
 }
 
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@id='kodePos'])"]), CP_KodePos)
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@id='nomor'])"]), CP_NoHp)
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@id='extension'])"]), CP_Prefix)
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//textarea[@id='alamat']"]), CP_Alamat)
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@name='nomor'])"]), CP_NoHp)
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//app-tab-cp-penjamin//input[@name='extension'])"]), CP_Prefix)
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//textarea[@name='alamat']"]), CP_Alamat)
 
 /*
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//*[text()='Kota/Kabupaten']"]))
@@ -92,18 +92,18 @@ switch(CP_isPenjamin) {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//strong[text()='Alamat sama dengan Penjamin']"]))
 			WebUI.delay(5)
 			
-			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nama']"]))
-			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nama']"]))
-			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nama']"]), CP_PasanganPenjaminNama)
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nama']"]))
+			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nama']"]))
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nama']"]), CP_PasanganPenjaminNama)
 			
-			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nomorIdentitas']"]))
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nomorIdentitas']"]))
 			WebUI.delay(1)
-			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nomorIdentitas']"]))
-			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_nomorIdentitas']"]), CP_PasanganPenjaminNIK)
+			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nomorIdentitas']"]))
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='nomorIdentitas']"]), CP_PasanganPenjaminNIK)
 			
-			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_tanggalLahir']"]))
-			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_tanggalLahir']"]))
-			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='pasangan_penjamin_tanggalLahir']"]), CP_PasanganPenjaminDOB)
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='tanggalLahir']"]))
+			WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='tanggalLahir']"]))
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-pasangan-penjamin//*[@id='tanggalLahir']"]), CP_PasanganPenjaminDOB)
 		break;
 	case 'no':
 	case 'n':

@@ -101,7 +101,7 @@ switch(isNamaSelainKonsumen) {
 	case 'y':
 		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur'])[2]"]), Cl_HubDebitur)
+		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur'])"]), Cl_HubDebitur)
 		break;
 	case 'no':
 	case 'n':

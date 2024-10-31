@@ -94,6 +94,9 @@ switch(emailSama) {
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//*[@formgroupname='alamatMail']//input[@name='kodePos']"]), '12430', FailureHandling.CONTINUE_ON_FAILURE);
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@formgroupname='alamatMail']//textarea[@id='alamat']"]), FailureHandling.CONTINUE_ON_FAILURE);
 		break;
+	case 'Kantor':
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='mailKantor'])[1]/following-sibling::span"]));	
+		break;
 }
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()=' WhatsApp sama dengan No. Handphone']"]));

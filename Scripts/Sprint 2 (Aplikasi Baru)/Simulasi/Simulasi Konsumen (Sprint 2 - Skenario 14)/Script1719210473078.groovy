@@ -105,6 +105,9 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id=
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='tahunPerusahaanDidirikan']"]), tahun_berdiri);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='jenisUsaha']"]), jenis_usaha);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='totalPenghasilan'])[1]"]), total_penghasilan_k);
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//textarea[@id='alamat'])[1]"]), alamat_perusahaan);
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='kodePos'])[1]"]), kodePos_perusahaan);
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='nomorTelepon'])[1]"]), kodePos_noTelp);
 
 if(status == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[text()='Pekerjaan'])[2]"]));
@@ -112,6 +115,23 @@ if(status == 'Married') {
 	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${pekerjaan_pasangan}']"]), 0);
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${pekerjaan_pasangan}']"]));
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='totalPenghasilanPasangan'])[1]"]), total_penghasilan_pasangan);
+	
+	switch(pekerjaan_pasangan) {
+		case 'Karyawan':
+		case 'ABRI':
+		case 'Pengacara':
+		case 'Lainnya':
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaPerusahaanPasangan'])[1]"]), namaPerusahaan_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='jabatanProfesiPasangan'])[1]"]), jabatan_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='tahunPerusahaanDidirikanPasangan'])[1]"]), tahunPerusahaan_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='jenisUsahaPasangan'])[1]"]), jenisUsaha_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//textarea[@id='alamatPasangan'])[1]"]), alamatPerusahaan_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='kodePosPasangan'])[1]"]), kodePos_pasangan);
+			WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='nomorTeleponPasangan'])[1]"]), nomorTelepon_pasangan);
+			break;
+		default:
+			break;
+	}
 }
 WebUI.delay(1);
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'Pekerjaan') + '.png', FailureHandling.STOP_ON_FAILURE)

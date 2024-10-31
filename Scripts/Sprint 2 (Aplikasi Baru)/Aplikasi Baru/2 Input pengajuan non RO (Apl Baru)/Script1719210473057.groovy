@@ -54,21 +54,9 @@ void showElements() {
 
 String stat = '';
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div//img[@class='img-placeholder']"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
 WebUI.delay(15)
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
-//WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), npwpPath);
-
-// NPWP Stuff
-//switch(BaruNPWPMilik) {
-//	case 'konsumen':
-//		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='konsumen']/following-sibling::span"]));
-//		break;
-//	case 'pasangan':
-//		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='pasangan']/following-sibling::span"]));
-//		break;
-//}
 
 for (data1 in searchData){
 	WebUI.delay(1);
@@ -96,14 +84,17 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='Pilih Jenis Identitas']"]));
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${BaruJenisIdentitasPasangan}']"]));
 	WebUI.delay(2);
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='doc-img-container pointer ng-star-inserted'])[1]"]));
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div//img[@class='img-placeholder'])"]));
 	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 	
+	/*
 	// Jika kode pos dan kabupaten belum terisi
+	WebUI.delay(5)
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='relative-container mb-2']//input[@id='kodePos']"]), BaruKodePos);
+	*/
 	
 	if(BaruAlamatSama == 'yes') {
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSesuaiKonsumen']/following-sibling::span"]));
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSamaDenganKonsumen']/following-sibling::span"]));
 	}
 	
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='email'])[2]"]), BaruEmailPasangan);
@@ -149,16 +140,11 @@ hideElements();
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 showElements();
 
+/*
 // Setelah Pre Screening
 if(BaruStatus == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Matching Pasangan']"]));
 } else WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Pre-Screening']"]));
 WebUI.delay(3)
-
+*/
 //WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + 'Hasil Pre-Screening') + '.png', FailureHandling.STOP_ON_FAILURE)
-
-//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Pre-Screening']"]), 5)
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Minta Rekomendasi BM ']"]))
-//WebUI.back()
-//WebUI.waitForElementClickable(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Input Pengajuan Sekarang ']"]), 0)
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Input Pengajuan Sekarang ']"]))

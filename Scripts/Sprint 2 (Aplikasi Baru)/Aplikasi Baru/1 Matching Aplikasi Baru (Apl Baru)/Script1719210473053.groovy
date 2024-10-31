@@ -74,11 +74,3 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text(
 // Hasil Matching
 WebUI.delay(10)
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Hasil Matching Existing') + '.png', FailureHandling.STOP_ON_FAILURE)
-/*
-WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@name='matching']/following-sibling::span)[1]"]), FailureHandling.OPTIONAL)
-WebUI.delay(1)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Click Matching RO') + '.png', FailureHandling.STOP_ON_FAILURE)
-
-// Lanjutkan
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Lanjutkan']"]))
-*/

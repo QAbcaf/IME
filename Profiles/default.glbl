@@ -36,12 +36,12 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru\\Data UAT Cycle 3'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Sprint 11'</initValue>
       <name>screenshotPathAplBaru</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\AplikasiBaru\\Data UAT Cycle 3'</initValue>
+      <initValue>'\\Screenshot\\AplikasiBaru\\Sprint 11'</initValue>
       <name>screenshotSimulasi</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -101,7 +101,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Assets\\stnkk.png'</initValue>
+      <initValue>'\\Assets\\stnk_bener.jpg'</initValue>
       <name>stnkPath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

@@ -350,6 +350,66 @@
       <value></value>
       <variableId>f292264b-7487-40f6-b465-7c45ef0e3587</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>85988f00-0cd6-4607-b6e9-1945265bbd4b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>16709a54-64cd-468e-a54a-de51fc524caf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>94902cc7-b314-4730-9594-3eecf856d206</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>5bb561b8-7b78-40e5-bbc4-ae85c5f0eb67</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a75570e5-18c1-4881-a62c-b1ff2591b773</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>6d611e08-c82f-4970-9b52-195cafce6f49</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>56382dca-2c58-4b0d-b01e-9fc1829aa859</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>08ac7c6b-43a1-499f-a615-ee938a10beee</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>558b5da0-8357-45b8-a2da-36bd6f1861ba</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>85447cc7-31ce-4bfb-8ff9-835f742479c0</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -741,5 +801,75 @@
       <id>f292264b-7487-40f6-b465-7c45ef0e3587</id>
       <masked>false</masked>
       <name>NPWP_Nomor</name>
+   </variable>
+   <variable>
+      <defaultValue>'Jl Alamat Perusahaan'</defaultValue>
+      <description></description>
+      <id>85988f00-0cd6-4607-b6e9-1945265bbd4b</id>
+      <masked>false</masked>
+      <name>alamat_perusahaan</name>
+   </variable>
+   <variable>
+      <defaultValue>'15418'</defaultValue>
+      <description></description>
+      <id>16709a54-64cd-468e-a54a-de51fc524caf</id>
+      <masked>false</masked>
+      <name>kodePos_perusahaan</name>
+   </variable>
+   <variable>
+      <defaultValue>'083873594728'</defaultValue>
+      <description></description>
+      <id>94902cc7-b314-4730-9594-3eecf856d206</id>
+      <masked>false</masked>
+      <name>kodePos_noTelp</name>
+   </variable>
+   <variable>
+      <defaultValue>'PT PERUSAHAAN PASANGAN\r\n'</defaultValue>
+      <description></description>
+      <id>5bb561b8-7b78-40e5-bbc4-ae85c5f0eb67</id>
+      <masked>false</masked>
+      <name>namaPerusahaan_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'HRD'</defaultValue>
+      <description></description>
+      <id>a75570e5-18c1-4881-a62c-b1ff2591b773</id>
+      <masked>false</masked>
+      <name>jabatan_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'2003'</defaultValue>
+      <description></description>
+      <id>6d611e08-c82f-4970-9b52-195cafce6f49</id>
+      <masked>false</masked>
+      <name>tahunPerusahaan_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'MAKANAN'</defaultValue>
+      <description></description>
+      <id>56382dca-2c58-4b0d-b01e-9fc1829aa859</id>
+      <masked>false</masked>
+      <name>jenisUsaha_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'JL PERUSAHAAN PASANGAN'</defaultValue>
+      <description></description>
+      <id>08ac7c6b-43a1-499f-a615-ee938a10beee</id>
+      <masked>false</masked>
+      <name>alamatPerusahaan_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'15417'</defaultValue>
+      <description></description>
+      <id>558b5da0-8357-45b8-a2da-36bd6f1861ba</id>
+      <masked>false</masked>
+      <name>kodePos_pasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'08385739248'</defaultValue>
+      <description></description>
+      <id>85447cc7-31ce-4bfb-8ff9-835f742479c0</id>
+      <masked>false</masked>
+      <name>nomorTelepon_pasangan</name>
    </variable>
 </TestCaseEntity>

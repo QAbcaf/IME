@@ -47,5 +47,5 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Me
 // screenshot
 
 // Masuk halaman dashboard click mobile entry (Skenario 2)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='list-app-item'][6]"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='list-app-item'][4]"]))
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Dashboard') + '.png', FailureHandling.STOP_ON_FAILURE)

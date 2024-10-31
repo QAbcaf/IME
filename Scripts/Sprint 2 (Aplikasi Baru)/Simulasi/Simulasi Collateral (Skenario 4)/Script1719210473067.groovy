@@ -60,6 +60,7 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text(
 WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Refresh']"]), FailureHandling.OPTIONAL)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Collateral (Hasil Matching)') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Tutup ']"]), FailureHandling.OPTIONAL)
 //WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='prescreeningKendaraanModal']//a)[1]"]))
 
 // STNK
@@ -104,7 +105,7 @@ switch(isNamaSelainKonsumen) {
 	case 'y':
 		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur'])[2]"]), Cl_HubDebitur)
+		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur' and @class='form-control ng-untouched ng-pristine ng-invalid'])"]), Cl_HubDebitur)
 		break;
 	case 'no':
 	case 'n':

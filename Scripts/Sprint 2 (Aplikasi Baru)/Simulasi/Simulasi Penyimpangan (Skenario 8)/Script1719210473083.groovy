@@ -46,9 +46,9 @@ String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
 
 // TAB Penyimpangan
-String firstValue = P_Penyimpangan.split("\\+")[0].trim()
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Penyimpangan']"]))
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='list-penimpangan-btn d-flex w-100 mb-2']/img"]))
+String firstValue = P_Penyimpangan.split("\\+")[0].trim();
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='Penyimpangan'])[1]"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='List Penyimpangan']//following-sibling::img"]))
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//*[@id='search']"]), firstValue)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up-items']/div[1]//span[@class='checkmark']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Pilih ']"]))
@@ -57,7 +57,7 @@ if (P_Penyimpangan.contains('+')) {
     String[] items = P_Penyimpangan.split("\\+")
     for (int i = 1; i < items.length; i++) {
         String trimmedItem = items[i].trim()
-        WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='list-penimpangan-btn d-flex w-100 mb-2']/img"]))
+        WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='List Penyimpangan']//following-sibling::img"]))
         WebUI.clearText(findTestObject('Object Repository/xpath', ['xpath' : "//*[@id='search']"]))
         WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//*[@id='search']"]), trimmedItem)
         WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up-items']/div[1]//span[@class='checkmark']"]))

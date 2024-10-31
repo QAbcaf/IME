@@ -29,7 +29,6 @@ String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("/", "\\")
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
-
 /*
 // ---------------- Pengajuan ----------	----------
 // Tab Konsumen
@@ -139,49 +138,20 @@ for (String variableName : variablesToPass3) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Contact Person (Skenario 2)'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
- 
-/*
+*/
+
 // Tab Matching Result
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
 WebUI.delay(10)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Matching Result') + '.png', FailureHandling.STOP_ON_FAILURE);
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-konsumen//fa-icon)[1]"]))
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '17 Tab Matching Result Konsumen') + '.png', FailureHandling.STOP_ON_FAILURE);
-WebUI.delay(1)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-konsumen//fa-icon)[1]"]))
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-konsumen//fa-icon)[2]"]), FailureHandling.OPTIONAL)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18 Tab Matching Result Pasangan Konsumen') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPenjamin']//following-sibling::span"]))
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '17 Tab Matching Result Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.delay(1)
 
-switch(konsumen) {
-	case 'A':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//fa-icon)[1]"]), FailureHandling.OPTIONAL)
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//span)[1]"]), FailureHandling.OPTIONAL)
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin[2]//span)[1]"]), FailureHandling.OPTIONAL)
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//input/following-sibling::span)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//input/following-sibling::span)[2]"]))
-		break;
-	case 'B':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//fa-icon)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//span)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@name='matchingPasanganPenjamin']/following-sibling::span)[1]"]))
-		break;
-	case 'C':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//fa-icon)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//input)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='PasanganPenjamin0']//span)[1]"]))
-		break;
-	case 'D':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//fa-icon)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//input)[1]"]))
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-matching-penjamin//input[@name='matchingPasanganPenjamin' and @value='none'])/following-sibling::span"]))
-		break;
-}
-WebUI.delay(1)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"]))
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18(2) Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
- */
 
 /*
 // Tab Collateral
@@ -218,6 +188,7 @@ for (String variableName : variablesToPass4) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
 */
+/*
 // Tab Loan Data
 Map<String, Object> variableMap5 = [ 
 	'konsumen': konsumen,
@@ -274,7 +245,7 @@ for (String variableName : variablesToPass5) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Loan Data (Skenario 6)'), variables5, FailureHandling.CONTINUE_ON_FAILURE)
-
+*/
 // Tab Penyimpangan
 Map<String, Object> variableMap6 = [
 	'konsumen': konsumen,

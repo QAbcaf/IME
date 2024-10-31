@@ -55,7 +55,10 @@ for (data in CPData) {
 
 
 WebUI.delay(1)
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Lihat Hasil Matching ']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Matching ']"]), FailureHandling.OPTIONAL)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Lihat Hasil Matching ']"]), FailureHandling.OPTIONAL)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Refresh']"]), FailureHandling.OPTIONAL)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Collateral (Hasil Matching)') + '.png', FailureHandling.STOP_ON_FAILURE);
 //WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='prescreeningKendaraanModal']//a)[1]"]))
 
@@ -101,7 +104,7 @@ switch(isNamaSelainKonsumen) {
 	case 'y':
 		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur'])"]), Cl_HubDebitur)
+		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur'])[2]"]), Cl_HubDebitur)
 		break;
 	case 'no':
 	case 'n':

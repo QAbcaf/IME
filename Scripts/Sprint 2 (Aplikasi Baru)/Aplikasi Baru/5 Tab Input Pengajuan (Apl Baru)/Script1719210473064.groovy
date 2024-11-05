@@ -76,6 +76,7 @@ for (String variableName : variablesToPass1) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Konsumen (Sprint 2 - Skenario 14)'), variables1, FailureHandling.CONTINUE_ON_FAILURE)
+
 // Tab FAP
 Map<String, Object> variableMap2 = [
 	'konsumen': konsumen,

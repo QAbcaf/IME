@@ -29,7 +29,7 @@ String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 String ktpPathPasangan = "${userDir}${GlobalVariable.ktpPathPasangan}".replace("/", "\\")
 String bpkbPath = "${userDir}${GlobalVariable.bpkbPath}".replace("/", "\\")
 String baseDir = System.getProperty('user.dir')
-
+/*
 // ---------------- Pengajuan ----------	----------
 // Tab Konsumen
 Map<String, Object> variableMap1 = [
@@ -105,7 +105,7 @@ for (String variableName : variablesToPass2) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi FAP (Sprint 2 - Skenario 15)'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
-
+*/
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,

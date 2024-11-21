@@ -87,15 +87,13 @@ if (stat == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div//img[@class='img-placeholder'])"]));
 	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPathPasangan);
 	
-	/*
-	// Jika kode pos dan kabupaten belum terisi
-	WebUI.delay(5)
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='relative-container mb-2']//input[@id='kodePos']"]), BaruKodePos);
-	*/
-	
 	if(BaruAlamatSama == 'yes') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSamaDenganKonsumen']/following-sibling::span"]));
 	}
+	
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_nama']"]), BaruNamaPasangan);
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_nomorIdentitas']"]), BaruNIKPasangan);
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_tanggalLahir']"]), BaruPasanganDOB);
 	
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='email'])[2]"]), BaruEmailPasangan);
 	

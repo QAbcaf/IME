@@ -10,7 +10,7 @@
       <id>88985501-5547-41d6-8b65-2af379418049</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>1</value>
+         <value>2</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -115,6 +115,24 @@
       <type>DATA_COLUMN</type>
       <value>BaruNPWPMilik</value>
       <variableId>d779f0ca-c1c3-4759-a32f-fe45637fe967</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>88985501-5547-41d6-8b65-2af379418049</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>BaruNamaPasangan</value>
+      <variableId>626312f1-84d8-490c-aa9e-3b5ca6521ea2</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>88985501-5547-41d6-8b65-2af379418049</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>BaruNIKPasangan</value>
+      <variableId>6e5c9ca1-4225-423e-8b9f-6a990f20cd35</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>88985501-5547-41d6-8b65-2af379418049</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>BaruPasanganDOB</value>
+      <variableId>fb62af21-b232-4b25-abd1-f63d2d9f1100</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -234,5 +252,26 @@
       <id>d779f0ca-c1c3-4759-a32f-fe45637fe967</id>
       <masked>false</masked>
       <name>BaruNPWPMilik</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>626312f1-84d8-490c-aa9e-3b5ca6521ea2</id>
+      <masked>false</masked>
+      <name>BaruNamaPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6e5c9ca1-4225-423e-8b9f-6a990f20cd35</id>
+      <masked>false</masked>
+      <name>BaruNIKPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>fb62af21-b232-4b25-abd1-f63d2d9f1100</id>
+      <masked>false</masked>
+      <name>BaruPasanganDOB</name>
    </variable>
 </TestCaseEntity>

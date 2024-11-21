@@ -105,7 +105,7 @@ for (String variableName : variablesToPass2) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi FAP (Sprint 2 - Skenario 15)'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
-*/
+
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,
@@ -152,6 +152,7 @@ WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"]))
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18(2) Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
+*/
 
 // Tab Collateral
 Map<String, Object> variableMap4 = [
@@ -186,7 +187,6 @@ for (String variableName : variablesToPass4) {
 }
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
-
 
 // Tab Loan Data
 Map<String, Object> variableMap5 = [ 

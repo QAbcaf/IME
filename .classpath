@@ -183,6 +183,7 @@
 		</attributes>
 	</classpathentry>
 	<classpathentry kind="lib" path="D:/BCAF/IME/Drivers/ashot-1.5.4.jar"/>
+	<classpathentry kind="lib" path="C:/Users/clarien cahyono/.katalon/packages/Katalon_Studio_Windows_64-9.3.0/Katalon_Studio_Windows_64-9.3.0/configuration/plugin/install/243029/1.0.2/ExcelKeywords.jar"/>
 	<classpathentry kind="lib" path="C:/Users/clarien cahyono/.katalon/packages/Katalon_Studio_Windows_64-9.3.0/Katalon_Studio_Windows_64-9.3.0/configuration/org.eclipse.osgi/27/0/.cp/resources/basic-report/katalon-studio-report-plugin.jar"/>
 	<classpathentry kind="con" path="GROOVY_SUPPORT"/>
 	<classpathentry kind="output" path="bin"/>

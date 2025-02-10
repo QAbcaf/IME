@@ -29,6 +29,8 @@ def ROData = [
 	['nomor', ROHandphoneNumber],
 ]
 
+WebUI.delay(1)
+
 for (data in ROData) {
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//modal-container//input[@formcontrolname='${data[0]}']"]), data[1])
 }

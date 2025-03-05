@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20220878'</initValue>
+      <initValue>'20200426'</initValue>
       <name>usernameCMO</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -148,5 +148,10 @@
       <description></description>
       <initValue>'\\Assets\\formA.jpg'</initValue>
       <name>formAPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Screenshot\\NewCar'</initValue>
+      <name>screenshotPathNewCar</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

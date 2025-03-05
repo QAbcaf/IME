@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>1 Matching Aplikasi Baru (Apl Baru)</name>
+   <name>1. Matching Aplikasi Baru (Apl Baru)</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>1c666eff-00a4-4a51-bde1-7b0a02c2ccc1</testCaseGuid>
+   <testCaseGuid>a19ca83a-34f9-4322-b382-59abcffa64f1</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
       <id>72891549-e2df-48a7-858a-ceba36eb2b43</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>1</value>
+         <value>4</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -18,104 +18,78 @@
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>konsumen</value>
-      <variableId>24decae8-b6b5-4dcf-952d-bd24533acbbd</variableId>
+      <variableId>591cf924-3a86-44f7-9904-e754398cb9e0</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>ROName</value>
-      <variableId>ae9dac00-a38a-4be3-8b59-75025243627e</variableId>
+      <variableId>764cbd53-a940-4809-a7cb-1cd9f86add75</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>RONik</value>
-      <variableId>4a5ee78c-4f31-4b9f-b204-e0658fd67db7</variableId>
+      <variableId>8e937c00-8f88-4471-a7ba-202790f2a886</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>RODob</value>
-      <variableId>f69753b1-64b9-4661-8b07-53c271c527bd</variableId>
+      <variableId>1dc3a3fb-5a7b-4590-aff1-26dec5bc62d7</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>ROHandphoneNumberPrefix</value>
-      <variableId>d292f8c2-8f68-4955-b2d7-7a3ea20cc242</variableId>
+      <variableId>c78a69cf-5a8a-46af-9706-c8e40f0550e9</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>ROHandphoneNumber</value>
-      <variableId>24b6c088-a87f-49a6-8716-04952439377b</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
-      <variableId>2c6d8a37-bc40-4e45-9840-c009cb8d5d04</variableId>
-   </variableLinks>
-   <variableLinks>
-      <testDataLinkId>72891549-e2df-48a7-858a-ceba36eb2b43</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>ROCarCondition</value>
-      <variableId>9dcddb27-e8ed-456d-883b-1baceb564a4a</variableId>
+      <variableId>387ac8b8-db78-4fe4-aac2-582c0d54a326</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>24decae8-b6b5-4dcf-952d-bd24533acbbd</id>
+      <id>591cf924-3a86-44f7-9904-e754398cb9e0</id>
       <masked>false</masked>
       <name>konsumen</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>ae9dac00-a38a-4be3-8b59-75025243627e</id>
+      <id>764cbd53-a940-4809-a7cb-1cd9f86add75</id>
       <masked>false</masked>
       <name>ROName</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>4a5ee78c-4f31-4b9f-b204-e0658fd67db7</id>
+      <id>8e937c00-8f88-4471-a7ba-202790f2a886</id>
       <masked>false</masked>
       <name>RONik</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>f69753b1-64b9-4661-8b07-53c271c527bd</id>
+      <id>1dc3a3fb-5a7b-4590-aff1-26dec5bc62d7</id>
       <masked>false</masked>
       <name>RODob</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>d292f8c2-8f68-4955-b2d7-7a3ea20cc242</id>
+      <id>c78a69cf-5a8a-46af-9706-c8e40f0550e9</id>
       <masked>false</masked>
       <name>ROHandphoneNumberPrefix</name>
    </variable>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
-      <id>24b6c088-a87f-49a6-8716-04952439377b</id>
+      <id>387ac8b8-db78-4fe4-aac2-582c0d54a326</id>
       <masked>false</masked>
       <name>ROHandphoneNumber</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>2c6d8a37-bc40-4e45-9840-c009cb8d5d04</id>
-      <masked>false</masked>
-      <name>ktpPath</name>
-   </variable>
-   <variable>
-      <defaultValue>''</defaultValue>
-      <description></description>
-      <id>9dcddb27-e8ed-456d-883b-1baceb564a4a</id>
-      <masked>false</masked>
-      <name>ROCarCondition</name>
    </variable>
 </TestCaseEntity>

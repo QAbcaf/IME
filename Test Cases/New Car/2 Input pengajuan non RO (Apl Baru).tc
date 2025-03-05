@@ -10,7 +10,7 @@
       <id>88985501-5547-41d6-8b65-2af379418049</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>1</value>
+         <value>2</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -139,6 +139,18 @@
       <type>DATA_COLUMN</type>
       <value>NamaTanpaGelar</value>
       <variableId>8405272e-6f8c-482a-8e69-08714efd77ec</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>88985501-5547-41d6-8b65-2af379418049</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>agamaPasangan</value>
+      <variableId>93ac4d5c-61c7-485b-bfa9-3baf0869f555</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>88985501-5547-41d6-8b65-2af379418049</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>BaruNamaPasanganTanpaGelar</value>
+      <variableId>cacf754c-e004-472d-8f04-f731838752b9</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -286,5 +298,19 @@
       <id>8405272e-6f8c-482a-8e69-08714efd77ec</id>
       <masked>false</masked>
       <name>NamaTanpaGelar</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>93ac4d5c-61c7-485b-bfa9-3baf0869f555</id>
+      <masked>false</masked>
+      <name>agamaPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cacf754c-e004-472d-8f04-f731838752b9</id>
+      <masked>false</masked>
+      <name>BaruNamaPasanganTanpaGelar</name>
    </variable>
 </TestCaseEntity>

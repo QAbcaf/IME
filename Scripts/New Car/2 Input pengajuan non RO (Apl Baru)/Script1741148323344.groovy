@@ -38,6 +38,7 @@ def inputData = [
 	['email', BaruEmail]
 ]
 
+def agamaPasangan = agamaPasangan
 
 def searchData = [
 	['Sandi Lahir', BaruSandiLahir],
@@ -91,7 +92,9 @@ if (stat == 'Married') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatSamaDenganKonsumen']/following-sibling::span"]));
 	}
 	
+	WebUI.delay(5)
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_nama']"]), BaruNamaPasangan);
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_namaTanpaGelar']"]), BaruNamaPasanganTanpaGelar);
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_nomorIdentitas']"]), BaruNIKPasangan);
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_tanggalLahir']"]), BaruPasanganDOB);
 	
@@ -102,8 +105,8 @@ if (stat == 'Married') {
 	String no_hp = hp.substring(4);
 	
 	//Agama
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div-select//div[@id='agamaName']"]));
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Hindu')]"]));
+//	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div-select//div[@id='agamaName']"]));
+//	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'$agamaPasangan')]"]));
 	
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='extension'])[2]"]), prefix);
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='noHp'])[2]"]), no_hp);
@@ -138,15 +141,38 @@ switch(BaruLoanType) {
 		break;
 }
 
-hideElements();
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
-showElements();
+//Screenshot
 
-/*
+//hideElements();
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Foto Data Konsumen')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+//showElements();
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Sandi Lahir')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '4. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@id='alamat']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '5. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//form//div[12]/input[@type='text']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+
+if(BaruStatus == 'Married') {
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_namaTanpaGelar']"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.1. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@id='pasangan_alamat']"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.2. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Input Loan Data')]"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	
+}else WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Input Loan Data')]"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '7. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+
 // Setelah Pre Screening
 if(BaruStatus == 'Married') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Matching Pasangan']"]));
 } else WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Pre-Screening']"]));
 WebUI.delay(3)
-*/
-//WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + 'Hasil Pre-Screening') + '.png', FailureHandling.STOP_ON_FAILURE)
+

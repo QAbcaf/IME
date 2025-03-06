@@ -10,7 +10,7 @@
       <id>5f546efe-15bf-420b-a612-c6ff0eb17cbc</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>4</value>
+         <value>1</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
@@ -1083,22 +1083,76 @@
       <variableId>ea421a52-e36c-4a79-94d7-e576c75e4bf1</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_lamaTahunBekerja</value>
       <variableId>d9a79494-c61c-415a-ba64-16201ab00d91</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_lamaBulanBekerja</value>
       <variableId>50ede87f-9dc2-47d5-96aa-d6fa27991ef4</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_umkm</value>
       <variableId>be091ec7-fd3b-4d71-bccf-ccf90234c291</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_lamaTahunBekerjaPasangan</value>
+      <variableId>c7064004-202d-44e7-bffc-3a6d66a61bd4</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_lamaBulanBekerjaPasangan</value>
+      <variableId>54e58e27-17bf-4751-92eb-5d59109d4aa0</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_totalMutasiDebit</value>
+      <variableId>3dce5222-fad1-4d76-81a8-2f719002d463</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_totalMutasiKredit</value>
+      <variableId>ef17522b-c8aa-4cea-ac02-aa5d952640d1</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_saldoMengendap</value>
+      <variableId>7d30b332-ac0e-4bd9-a68b-a53c8a2c8c62</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_luasTanah</value>
+      <variableId>5f6cea6b-9f49-4d2e-8fd2-54dedbdf3999</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_luasBangunan</value>
+      <variableId>4bd2b21e-8777-4eb2-8692-050f014c9945</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_deskripsiPekerjaan</value>
+      <variableId>a2568b7c-f12a-4017-b0bf-deef48ad71e6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_deskripsiPekerjaanPasangan</value>
+      <variableId>e46ecc11-c4ce-4f7e-9150-e193fd2806ed</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -2366,5 +2420,68 @@
       <id>be091ec7-fd3b-4d71-bccf-ccf90234c291</id>
       <masked>false</masked>
       <name>K_umkm</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c7064004-202d-44e7-bffc-3a6d66a61bd4</id>
+      <masked>false</masked>
+      <name>K_lamaTahunBekerjaPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>54e58e27-17bf-4751-92eb-5d59109d4aa0</id>
+      <masked>false</masked>
+      <name>K_lamaBulanBekerjaPasnagan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>3dce5222-fad1-4d76-81a8-2f719002d463</id>
+      <masked>false</masked>
+      <name>K_totalMutasiDebit</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>ef17522b-c8aa-4cea-ac02-aa5d952640d1</id>
+      <masked>false</masked>
+      <name>K_totalMutasiKredit</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7d30b332-ac0e-4bd9-a68b-a53c8a2c8c62</id>
+      <masked>false</masked>
+      <name>K_saldoMengendap</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5f6cea6b-9f49-4d2e-8fd2-54dedbdf3999</id>
+      <masked>false</masked>
+      <name>K_luasTanah</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4bd2b21e-8777-4eb2-8692-050f014c9945</id>
+      <masked>false</masked>
+      <name>K_luasBangunan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>a2568b7c-f12a-4017-b0bf-deef48ad71e6</id>
+      <masked>false</masked>
+      <name>K_deskripsiPekerjaan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>e46ecc11-c4ce-4f7e-9150-e193fd2806ed</id>
+      <masked>false</masked>
+      <name>K_deskripsiPekerjaanPasangan</name>
    </variable>
 </TestCaseEntity>

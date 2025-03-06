@@ -101,7 +101,25 @@ switch(emailSama) {
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()=' WhatsApp sama dengan No. Handphone']"]));
 WebUI.delay(1)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab FAP') + '.png', FailureHandling.STOP_ON_FAILURE);
+
+//---------Screenshot---------
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Foto Dokumen FAP')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '18. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='namaSID'])[1]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '19. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='jumlahPertanggungan'])[1]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '20. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='nomor']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '21. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-fap//button[text()=' Selanjutnya ']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '22. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-fap//button[text()=' Selanjutnya ']"]));
 WebUI.delay(3)

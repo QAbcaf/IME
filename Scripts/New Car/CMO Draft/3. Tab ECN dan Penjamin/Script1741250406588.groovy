@@ -111,24 +111,19 @@ switch(CP_isPenjamin) {
 		break;
 }
 
-// Penjaminan oleh Showroom
-switch(CP_Showroom) {
-	case 'yes':
-	case 'y':
-	case 'Yes':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='terdapatBBG' and @value='true']/following-sibling::span"]))
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-showroom-guarantee//img)[2]"]))
-		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), kkPath);
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-showroom-guarantee//img)[4]"]))
-		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
-		break;
-	case 'no':
-	case 'n':
-	case 'No':
-		break;
-}
 
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab ECN') + '.png', FailureHandling.STOP_ON_FAILURE);
+//---------Screenshot---------
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Foto Dokumen FAP')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '23. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '24. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex']/label[1]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '25. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]))
 WebUI.delay(3)
 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab ECN Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

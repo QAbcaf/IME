@@ -61,7 +61,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Assets\\selfie.jpg'</initValue>
+      <initValue>'\\Assets\\selfie.png'</initValue>
       <name>selfiePath</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>

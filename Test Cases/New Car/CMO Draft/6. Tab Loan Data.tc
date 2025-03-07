@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Simulasi Loan Data (Skenario 6)</name>
+   <name>6. Tab Loan Data</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b19b0d3a-671b-4b33-806c-72946227da0f</testCaseGuid>
@@ -75,8 +75,8 @@
       <variableId>72a96c75-8f39-4f56-aa71-5812c7e6f241</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
       <value></value>
       <variableId>ce7858e5-2876-4c38-9b01-ddec2f35233a</variableId>
    </variableLinks>

@@ -10,7 +10,7 @@
       <id>9200d269-10af-4958-bc0f-17b9f4ce80d0</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>2</value>
+         <value>1</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint3Matrix</testDataId>
    </testDataLinks>
@@ -157,6 +157,12 @@
       <type>DATA_COLUMN</type>
       <value>CP_PasanganPenjaminNIK</value>
       <variableId>4a96f520-5353-4da2-b83c-2b205fe1066e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>9200d269-10af-4958-bc0f-17b9f4ce80d0</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>K_Status</value>
+      <variableId>83d31ee4-c7d2-4281-88e1-a153495fe7cc</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -325,5 +331,12 @@
       <id>4a96f520-5353-4da2-b83c-2b205fe1066e</id>
       <masked>false</masked>
       <name>CP_PasanganPenjaminNIK</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>83d31ee4-c7d2-4281-88e1-a153495fe7cc</id>
+      <masked>false</masked>
+      <name>status</name>
    </variable>
 </TestCaseEntity>

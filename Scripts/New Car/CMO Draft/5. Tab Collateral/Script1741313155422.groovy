@@ -33,12 +33,18 @@ String baseDir = System.getProperty('user.dir')
 
 // TAB Collateral
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Collateral']"]))
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch Dealer']"]))
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_Branch)
-WebUI.delay(7)
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='dealerMain']"]))
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_DealerName)
+WebUI.delay(5)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]))
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//tab[@class='tab-pane active']//div[@class='row']//img"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch Dealer']"]))
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_Branch)
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]))
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='BPKB_']//document-preview"]))
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
 
 // BPKB
@@ -100,12 +106,18 @@ for (data in ColateralData) {
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='${data[0]}']"]), data[1])
 }
 
+if(Cl_TujuanPenggunaan == 'Produktif') {
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='tujuanPenggunaan']/label[1]"]))
+}else WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='tujuanPenggunaan']/label[2]"]))
+
+	
 switch(isNamaSelainKonsumen) {
 	case 'yes':
 	case 'y':
 		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//form//input[@id='hubunganDenganDebitur' and @class='form-control ng-untouched ng-pristine ng-invalid'])"]), Cl_HubDebitur)
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='hubunganDenganDebitur']"]))
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//slide-up//strong[text()='${Cl_HubDebitur}'])[2]"]))
 		break;
 	case 'no':
 	case 'n':
@@ -115,7 +127,6 @@ switch(isNamaSelainKonsumen) {
 		break;
 }
 
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Collateral') + '.png', FailureHandling.STOP_ON_FAILURE);
+
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-collateral//button[text()=' Selanjutnya ']"]))
 WebUI.delay(3)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '19 Tab Collateral Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

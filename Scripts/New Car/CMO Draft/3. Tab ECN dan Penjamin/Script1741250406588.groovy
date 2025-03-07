@@ -117,14 +117,23 @@ switch(CP_isPenjamin) {
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Foto Dokumen FAP')]"]),0);
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '23. Tab FAP') + '.png', FailureHandling.OPTIONAL)
 
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]),0);
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Data Penjamin')]"]),0);
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '24. Tab FAP') + '.png', FailureHandling.OPTIONAL)
 
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex']/label[1]"]),0);
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@formgroupname='alamat']//textarea[@id='alamat' and @name='alamat' and @formcontrolname='alamat'])[2]"]),0);
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '25. Tab FAP') + '.png', FailureHandling.OPTIONAL)
 
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '26. Tab FAP') + '.png', FailureHandling.OPTIONAL)
+
+if(status == 'Married') {
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Pasangan Penjamin')]"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '26.1 Tab FAP') + '.png', FailureHandling.OPTIONAL)
+	
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@formgroupname='alamat']//textarea[@id='alamat' and @name='alamat' and @formcontrolname='alamat'])[3]"]),0);
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '26.2 Tab FAP') + '.png', FailureHandling.OPTIONAL)
+}else
+
+//---------Screenshot---------
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-cp-penjamin//button[text()=' Selanjutnya ']"]))
-WebUI.delay(3)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '16 Tab ECN Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
-

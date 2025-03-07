@@ -1,15 +1,15 @@
-import com.kms.katalon.core.main.TestCaseMain
 import com.kms.katalon.core.logging.KeywordLogger
+import com.kms.katalon.core.exception.StepFailedException
+import com.kms.katalon.core.main.TestCaseMain
+import com.kms.katalon.core.testdata.TestDataColumn
 import com.kms.katalon.core.testcase.TestCaseBinding
 import com.kms.katalon.core.driver.internal.DriverCleanerCollector
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.configuration.RunConfiguration
-import com.kms.katalon.core.webui.contribution.WebUiDriverCleaner
-import com.kms.katalon.core.mobile.contribution.MobileDriverCleaner
-import com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner
-import com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner
-import com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner
-
+import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
+import internal.GlobalVariable as GlobalVariable
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile('C:\\Users\\Daniel\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Login\\20250306_153005\\execution.properties')
+RunConfiguration.setExecutionSettingFile("C:\\Users\\Daniel\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\CMO Draft\\5. Tab Collateral\\20250307_112619\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-        TestCaseMain.runTestCase('Test Cases/Login', new TestCaseBinding('Test Cases/Login',[:]), FailureHandling.STOP_ON_FAILURE , false)
+       TestCaseMain.startTestCaseBinding('Test Cases/New Car/CMO Draft/5. Tab Collateral', new File("C:\\Users\\Daniel\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\CMO Draft\\5. Tab Collateral\\20250307_112620\\testCaseBinding"))
     

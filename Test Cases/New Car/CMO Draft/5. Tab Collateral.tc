@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Simulasi Collateral (Skenario 4)</name>
+   <name>5. Tab Collateral</name>
    <tag></tag>
    <comment></comment>
    <testCaseGuid>b9b40d04-391f-458f-8172-5810bbfd0beb</testCaseGuid>
@@ -10,7 +10,7 @@
       <id>18f0306d-e742-4a3c-89a7-f57b927357dc</id>
       <iterationEntity>
          <iterationType>SPECIFIC</iterationType>
-         <value>2</value>
+         <value>1</value>
       </iterationEntity>
       <testDataId>Data Files/Sprint3Matrix</testDataId>
    </testDataLinks>
@@ -103,6 +103,18 @@
       <type>DATA_COLUMN</type>
       <value>Cl_HubDebitur</value>
       <variableId>87da5291-d4b1-438b-a069-bd8f7bd1685c</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_DealerName</value>
+      <variableId>4d799094-e098-479a-aad7-0a69c363406d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_TujuanPenggunaan</value>
+      <variableId>7daad398-03d2-4c6d-9033-f2604e0adbbf</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -208,5 +220,19 @@
       <id>87da5291-d4b1-438b-a069-bd8f7bd1685c</id>
       <masked>false</masked>
       <name>Cl_HubDebitur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>4d799094-e098-479a-aad7-0a69c363406d</id>
+      <masked>false</masked>
+      <name>Cl_DealerName</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>7daad398-03d2-4c6d-9033-f2604e0adbbf</id>
+      <masked>false</masked>
+      <name>Cl_TujuanPenggunaan</name>
    </variable>
 </TestCaseEntity>

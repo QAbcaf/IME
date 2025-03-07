@@ -121,6 +121,7 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi 
 // Tab CP
 Map<String, Object> variableMap3 = [
 	'konsumen': konsumen,
+	'status': K_Status,
 	'CP_Nama': CP_Nama,
 	'CP_HubKonsumen': CP_HubKonsumen,
 	'CP_KodePos': CP_KodePos,
@@ -136,68 +137,67 @@ Map<String, Object> variableMap3 = [
 	'CP_PasanganPenjaminDOB': CP_PasanganPenjaminDOB,
 ]
 
-//List<String> variablesToPass3 = []
-//for (String columnHeader : variableMap3.keySet()) {
-//	Object value = variableMap3.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass3.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables3 = [:]
-//for (String variableName : variablesToPass3) {
-//	variables3.put(variableName, variableMap3.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Contact Person (Skenario 2)'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
-//
+List<String> variablesToPass3 = []
+for (String columnHeader : variableMap3.keySet()) {
+	Object value = variableMap3.get(columnHeader)
+	if (value != null) {
+		variablesToPass3.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables3 = [:]
+for (String variableName : variablesToPass3) {
+	variables3.put(variableName, variableMap3.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Contact Person (Skenario 2)'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
+
 //// Tab Matching Result
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
-//WebUI.delay(10)
-//WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Matching Result') + '.png', FailureHandling.STOP_ON_FAILURE);
-//
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPenjamin']//following-sibling::span"]))
-//WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '17 Tab Matching Result Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
-//WebUI.delay(1)
-//
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"]))
-//WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '18(2) Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
-//
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
+WebUI.delay(10)
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPenjamin']//following-sibling::span"]))
+WebUI.delay(1)
+
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"]))
+WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotSimulasi)) + '/' + konsumen  + '/' + '27. Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.STOP_ON_FAILURE);
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"]))
+
 //// Tab Collateral
-//Map<String, Object> variableMap4 = [
-//	'konsumen': konsumen,
-//	'Cl_Branch': Cl_Branch,
-//	'Cl_BpkbNo': Cl_BpkbNo,
-//	'Cl_NoMesin': Cl_NoMesin,
-//	'Cl_NoRangka': Cl_NoRangka,
-//	'Cl_Merk': Cl_Merk,
-//	'Cl_Model': Cl_Model,
-//	'Cl_Tipe': Cl_Tipe,
-//	'Cl_PeruntukanKendaraan': Cl_PeruntukanKendaraan,
-//	'Cl_Tahun': Cl_Tahun,
-//	'Cl_Warna': Cl_Warna,
-//	'Cl_NamaKepemilikan': Cl_NamaKepemilikan,
-//	'isNamaSelainKonsumen': isNamaSelainKonsumen,
-//	'Cl_NIKDebitur': Cl_NIKDebitur,
-//	'Cl_HubDebitur': Cl_HubDebitur,
-//]
-//
-//List<String> variablesToPass4 = []
-//for (String columnHeader : variableMap4.keySet()) {
-//	Object value = variableMap4.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass4.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables4 = [:]
-//for (String variableName : variablesToPass4) {
-//	variables4.put(variableName, variableMap4.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
-//
+Map<String, Object> variableMap4 = [
+	'konsumen': konsumen,
+	'Cl_Branch': Cl_Branch,
+	'Cl_BpkbNo': Cl_BpkbNo,
+	'Cl_NoMesin': Cl_NoMesin,
+	'Cl_NoRangka': Cl_NoRangka,
+	'Cl_Merk': Cl_Merk,
+	'Cl_Model': Cl_Model,
+	'Cl_Tipe': Cl_Tipe,
+	'Cl_PeruntukanKendaraan': Cl_PeruntukanKendaraan,
+	'Cl_Tahun': Cl_Tahun,
+	'Cl_Warna': Cl_Warna,
+	'Cl_NamaKepemilikan': Cl_NamaKepemilikan,
+	'isNamaSelainKonsumen': isNamaSelainKonsumen,
+	'Cl_NIKDebitur': Cl_NIKDebitur,
+	'Cl_HubDebitur': Cl_HubDebitur,
+	'Cl_DealerName': Cl_DealerName,
+]
+
+List<String> variablesToPass4 = []
+for (String columnHeader : variableMap4.keySet()) {
+	Object value = variableMap4.get(columnHeader)
+	if (value != null) {
+		variablesToPass4.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables4 = [:]
+for (String variableName : variablesToPass4) {
+	variables4.put(variableName, variableMap4.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/Sprint 2 (Aplikasi Baru)/Simulasi/Simulasi Collateral (Skenario 4)'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
+
 //// Tab Loan Data
 //Map<String, Object> variableMap5 = [ 
 //	'konsumen': konsumen,

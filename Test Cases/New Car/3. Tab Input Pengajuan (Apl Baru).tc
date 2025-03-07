@@ -1154,6 +1154,12 @@
       <value>K_deskripsiPekerjaanPasangan</value>
       <variableId>e46ecc11-c4ce-4f7e-9150-e193fd2806ed</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_DealerName</value>
+      <variableId>683422f5-bfc1-4fc7-ba33-73247013d825</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -2483,5 +2489,12 @@
       <id>e46ecc11-c4ce-4f7e-9150-e193fd2806ed</id>
       <masked>false</masked>
       <name>K_deskripsiPekerjaanPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>683422f5-bfc1-4fc7-ba33-73247013d825</id>
+      <masked>false</masked>
+      <name>Cl_DealerName</name>
    </variable>
 </TestCaseEntity>

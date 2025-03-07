@@ -18,35 +18,45 @@ import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
 String baseDir = System.getProperty('user.dir')
+
 String login_role = GlobalVariable.loginRole
 
 // (Skenario 1)
 // ahahahha
 switch (login_role) {
-	case "cmo":
-		username = GlobalVariable.usernameCMO
-		break;
-	case "bm":
-		username = GlobalVariable.usernameBM
-		break;
-	case "checker":
-		username = GlobalVariable.usernameChecker
-		break;
+    case 'cmo':
+        username = GlobalVariable.usernameCMO
+
+        break
+    case 'bm':
+        username = GlobalVariable.usernameBM
+
+        break
+    case 'checker':
+        username = GlobalVariable.usernameChecker
+
+        break
 }
 
 String password = GlobalVariable.password
 
 WebUI.openBrowser(GlobalVariable.IMEUrl)
+
 WebUI.maximizeWindow()
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//form//input[@formcontrolname='userid']"]), username)
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//form//input[@formcontrolname='password']"]), password)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Login') + '.png', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//form//button[@type='submit']"]))
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Mengerti']"]))
+WebUI.setText(findTestObject('Object Repository/xpath', [('xpath') : '//form//input[@formcontrolname=\'userid\']']), username)
 
-// screenshot
+WebUI.setText(findTestObject('Object Repository/xpath', [('xpath') : '//form//input[@formcontrolname=\'password\']']), password)
 
-// Masuk halaman dashboard click mobile entry (Skenario 2)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-dashboard//ng-component//div[2]/div[2]/a/div/div[1]"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Dashboard') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((((baseDir + GlobalVariable.screenshotPathAplBaru) + '/') + konsumen) + '/') + 'Login') + '.png', 
+    FailureHandling.STOP_ON_FAILURE)
+
+WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//form//button[@type=\'submit\']']))
+
+WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//*[text()=\'Mengerti\']']))
+
+WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//app-dashboard//ng-component//div[2]/div[2]/a/div/div[1]']))
+
+WebUI.takeScreenshot((((((baseDir + GlobalVariable.screenshotPathAplBaru) + '/') + konsumen) + '/') + 'Dashboard') + '.png', 
+    FailureHandling.STOP_ON_FAILURE)
+

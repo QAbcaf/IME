@@ -218,6 +218,12 @@ switch(JenisPengajuan) {
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_CarInsuranceBranch'])"]), 0)
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_CarInsuranceBranch'])"]))
 		
+		if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]), 10, FailureHandling.OPTIONAL)) {
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]))
+			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '36. Tab Loan Data - pop up tlp') + '.png', FailureHandling.OPTIONAL)
+		}
+		
+		
 		// Credit Protection
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Maskapai Asuransi']"]))
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='slide-up show']//*[text()='$L_MaskapaiAsuransi']"]))

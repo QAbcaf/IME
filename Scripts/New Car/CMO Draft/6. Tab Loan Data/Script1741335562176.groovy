@@ -26,6 +26,7 @@ import org.junit.runner.notification.Failure
 import org.openqa.selenium.Keys
 import org.openqa.selenium.WebElement
 import org.openqa.selenium.WebElement as Keys
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 
 String userDir = RunConfiguration.getProjectDir()
 String selfiePath = "${userDir}${GlobalVariable.selfiePath}".replace("/", "\\")
@@ -129,6 +130,12 @@ switch(JenisPengajuan) {
 				 break;
 		 }
 		 
+		 //TLP ditambahkan pop up
+		 if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]), 10, FailureHandling.OPTIONAL)) {
+			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]))
+		 }
+		 
+		 
 		  // Credit Protection
 		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Maskapai Asuransi']"]))
 		  WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='slide-up show']//*[text()='$L_MaskapaiAsuransi']"]))
@@ -161,6 +168,7 @@ switch(JenisPengajuan) {
 			 WebUI.delay(1)
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='modal-body']//*[text()='${data[0]}']"]))
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='drawer-select show']//*[text()='${data[1]}']"]))
+			 WebUI.delay(2)
 		 }
 		 
 		 if(L_BaruAsuransiLainnyaType == 'TLP') {

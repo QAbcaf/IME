@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_143151\\execution.properties")
+RunConfiguration.setExecutionSettingFile("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_160857\\execution.properties")
 
 TestCaseMain.beforeStart()
 
-       TestCaseMain.startTestCaseBinding('Test Cases/New Car/3. Tab Input Pengajuan (Apl Baru)', new File("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_143152\\testCaseBinding"))
+       TestCaseMain.startTestCaseBinding('Test Cases/New Car/3. Tab Input Pengajuan (Apl Baru)', new File("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_160858\\testCaseBinding"))
     

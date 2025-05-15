@@ -1,15 +1,15 @@
-import com.kms.katalon.core.logging.KeywordLogger
-import com.kms.katalon.core.exception.StepFailedException
 import com.kms.katalon.core.main.TestCaseMain
-import com.kms.katalon.core.testdata.TestDataColumn
+import com.kms.katalon.core.logging.KeywordLogger
 import com.kms.katalon.core.testcase.TestCaseBinding
 import com.kms.katalon.core.driver.internal.DriverCleanerCollector
 import com.kms.katalon.core.model.FailureHandling
 import com.kms.katalon.core.configuration.RunConfiguration
-import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
-import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
-import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
-import internal.GlobalVariable as GlobalVariable
+import com.kms.katalon.core.webui.contribution.WebUiDriverCleaner
+import com.kms.katalon.core.mobile.contribution.MobileDriverCleaner
+import com.kms.katalon.core.cucumber.keyword.internal.CucumberDriverCleaner
+import com.kms.katalon.core.windows.keyword.contribution.WindowsDriverCleaner
+import com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner
+
 
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.webui.contribution.WebUiDriverCleaner())
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.mobile.contribution.MobileDriverCleaner())
@@ -18,9 +18,9 @@ DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.w
 DriverCleanerCollector.getInstance().addDriverCleaner(new com.kms.katalon.core.testng.keyword.internal.TestNGDriverCleaner())
 
 
-RunConfiguration.setExecutionSettingFile("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_144020\\execution.properties")
+RunConfiguration.setExecutionSettingFile('C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\Login\\20250515_162024\\execution.properties')
 
 TestCaseMain.beforeStart()
 
-       TestCaseMain.startTestCaseBinding('Test Cases/New Car/3. Tab Input Pengajuan (Apl Baru)', new File("C:\\Users\\ZEFANY~1\\AppData\\Local\\Temp\\Katalon\\Test Cases\\New Car\\3. Tab Input Pengajuan (Apl Baru)\\20250515_144021\\testCaseBinding"))
+        TestCaseMain.runTestCase('Test Cases/Login', new TestCaseBinding('Test Cases/Login',[:]), FailureHandling.STOP_ON_FAILURE , false)
     

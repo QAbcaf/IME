@@ -73,20 +73,11 @@ if(Cl_TujuanPenggunaan == 'Produktif') {
 }else WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='tujuanPenggunaan']/label[2]"]))
 
 	
-switch(isNamaSelainKonsumen) {
-	case 'yes':
-	case 'y':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='hubunganDenganDebitur']"]))
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//slide-up//strong[text()='${Cl_HubDebitur}'])[2]"]))
-		break;
-	case 'no':
-	case 'n':
-	case '':
-		break;
-	default:
-		break;
+if (isNamaSelainKonsumen == 'yes') {
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Menggunakan nama selain konsumen']"]))
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nomorIdentitasDebitur']"]), Cl_NIKDebitur)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='hubunganDenganDebitur']"]))
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//slide-up//strong[text()='${Cl_HubDebitur}'])[2]"]))
 }
 
 // --- Pengajuan Chassis dan Karoseri
@@ -103,20 +94,19 @@ if (pengajuanChassis == 'Ya') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
 	
 	// --- Harga Karoseri ---
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='harga']"]), Cl_HargaKaroseriH);
-	
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='harga']"]), Cl_HargaKaroseri);
 }
 
 //------Screenshot------
 
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Showroom')]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '28. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
-
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='Tipe']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '29. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
-
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-collateral//button[text()=' Selanjutnya ']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '30. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
+//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Showroom')]"]),0);
+//WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '28. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
+//
+//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='Tipe']"]),0);
+//WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '29. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
+//
+//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-collateral//button[text()=' Selanjutnya ']"]),0);
+//WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '30. Tab Collateral') + '.png', FailureHandling.OPTIONAL)
 
 //------Screenshot------
 

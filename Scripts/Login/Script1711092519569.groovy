@@ -44,7 +44,7 @@ WebUI.openBrowser(GlobalVariable.IMEUrl)
 
 WebUI.maximizeWindow()
 
-WebUI.setText(findTestObject('Object Repository/xpath', [('xpath') : '//form//input[@formcontrolname=\'userid\']']), username)
+WebUI.setText(findTestObject('Object Repository/xpath', [('xpath') : '//form//input[@formcontrolname=\'userid\']']), username) 
 
 WebUI.setText(findTestObject('Object Repository/xpath', [('xpath') : '//form//input[@formcontrolname=\'password\']']), password)
 
@@ -55,7 +55,7 @@ WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//form//butt
 
 WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//*[text()=\'Mengerti\']']))
 
-WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '//app-dashboard//ng-component//div[2]/div[2]/a/div/div[1]']))
+WebUI.click(findTestObject('Object Repository/xpath', [('xpath') : '(//div[@class=\'card-body\'])[4]']))
 
 WebUI.takeScreenshot((((((baseDir + GlobalVariable.screenshotPathAplBaru) + '/') + konsumen) + '/') + 'Dashboard') + '.png', 
     FailureHandling.STOP_ON_FAILURE)

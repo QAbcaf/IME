@@ -4,6 +4,7 @@
    <name>6. Tab Loan Data</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b19b0d3a-671b-4b33-806c-72946227da0f</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>

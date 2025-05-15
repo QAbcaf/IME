@@ -4,6 +4,7 @@
    <name>5. Tab Collateral</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b9b40d04-391f-458f-8172-5810bbfd0beb</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
@@ -115,6 +116,30 @@
       <type>DATA_COLUMN</type>
       <value>Cl_TujuanPenggunaan</value>
       <variableId>7daad398-03d2-4c6d-9033-f2604e0adbbf</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1b160d4a-3b94-4360-814e-4e10cb71a80a</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>db4f72a3-46a6-43ff-8adb-45ca212f7c1b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>1d56031f-52d2-40df-8d45-93993b30e969</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>48e190b5-b37c-40bc-909d-aa2a33d255d5</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -234,5 +259,33 @@
       <id>7daad398-03d2-4c6d-9033-f2604e0adbbf</id>
       <masked>false</masked>
       <name>Cl_TujuanPenggunaan</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1b160d4a-3b94-4360-814e-4e10cb71a80a</id>
+      <masked>false</masked>
+      <name>pengajuanChassis</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>db4f72a3-46a6-43ff-8adb-45ca212f7c1b</id>
+      <masked>false</masked>
+      <name>Cl_NamaDealerKaroseri</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1d56031f-52d2-40df-8d45-93993b30e969</id>
+      <masked>false</masked>
+      <name>Cl_CabangDealerKaroseri</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>48e190b5-b37c-40bc-909d-aa2a33d255d5</id>
+      <masked>false</masked>
+      <name>Cl_HargaKaroseri</name>
    </variable>
 </TestCaseEntity>

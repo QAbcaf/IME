@@ -3,7 +3,12 @@ import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
 import static com.kms.katalon.core.testobject.ObjectRepository.findWindowsObject
-import com.kms.katalon.core.checkpoint.Checkpoint as Checkpoint
+
+import java.sql.Driver
+import java.util.concurrent.ConcurrentHashMap.KeySetView
+
+import com.kms.katalon.core.checkpoint.Checkpoint
+import com.kms.katalon.core.configuration.RunConfiguration
 import com.kms.katalon.core.cucumber.keyword.CucumberBuiltinKeywords as CucumberKW
 import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
@@ -13,13 +18,38 @@ import com.kms.katalon.core.testng.keyword.TestNGBuiltinKeywords as TestNGKW
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+import com.kms.katalon.core.webui.keyword.internal.WebUIAbstractKeyword
 import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
-import internal.GlobalVariable as GlobalVariable
+import groovy.console.ui.Console
+import internal.GlobalVariable
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import org.openqa.selenium.Keys as Keys
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.driver.DriverFactory
+import org.openqa.selenium.By
+import org.openqa.selenium.WebDriver
+import org.openqa.selenium.WebElement
+import org.openqa.selenium.Keys
+
+import org.junit.runner.notification.Failure
+import org.openqa.selenium.Keys
+import org.openqa.selenium.WebElement
+import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
+
+String userDir = RunConfiguration.getProjectDir()
+String ktpPath = "${userDir}${GlobalVariable.ktpPath}".replace("/", "\\")
 
 // (Skenario 3)
 String baseDir = System.getProperty('user.dir')
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//img[@alt='aplikasi-baru-global']"]))
+
+// Upload Foto
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='document-preview ng-star-inserted']"]), FailureHandling.OPTIONAL);
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@type='file' and contains(@class, 'hidden-upload')])[2]"]), ktpPath,FailureHandling.STOP_ON_FAILURE);
+
+WebUI.delay(10)
 
 // Input matching RO
 def ROData = [
@@ -29,7 +59,6 @@ def ROData = [
 	['nomor', ROHandphoneNumber],
 ]
 
-WebUI.delay(1)
 
 for (data in ROData) {
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//modal-container//input[@formcontrolname='${data[0]}']"]), data[1])
@@ -69,6 +98,8 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='" 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='" + month + "']"]))
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='" + day + "']"]))
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Input RO') + '.png', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.delay(1)
 
 // Click Matching Button
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Matching']"]))

@@ -159,6 +159,16 @@ public class GlobalVariable {
      */
     public static Object screenshotPathNewCar
      
+    /**
+     * <p></p>
+     */
+    public static Object pengajuanPemohonPath
+     
+    /**
+     * <p></p>
+     */
+    public static Object buktiSegmentasiPath
+     
 
     static {
         try {
@@ -196,6 +206,8 @@ public class GlobalVariable {
             fakturPath = selectedVariables['fakturPath']
             formAPath = selectedVariables['formAPath']
             screenshotPathNewCar = selectedVariables['screenshotPathNewCar']
+            pengajuanPemohonPath = selectedVariables['pengajuanPemohonPath']
+            buktiSegmentasiPath = selectedVariables['buktiSegmentasiPath']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

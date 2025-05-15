@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>3. Tab ECN dan Penjamin</name>
+   <name>4. Tab ECN dan Penjamin</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>b8570cf9-10d4-475b-95a4-1729b0d1bc4b</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>

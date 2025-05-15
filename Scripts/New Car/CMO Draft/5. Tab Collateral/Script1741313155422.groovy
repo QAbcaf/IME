@@ -89,6 +89,24 @@ switch(isNamaSelainKonsumen) {
 		break;
 }
 
+// --- Pengajuan Chassis dan Karoseri
+if (pengajuanChassis == 'Ya') {
+	// --- Nama Dealer Karoseri ---
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[@class='rb-container text-muted w-50 mb-0'][normalize-space()='Ya']"]))
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Nama Dealer Karoseri')]"]))
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_NamaDealerKaroseri)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	
+	// --- Cabang Dealer Karoseri ---
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Cabang Dealer Karoseri')]"]))
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_CabangDealerKaroseri)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	
+	// --- Harga Karoseri ---
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='harga']"]), Cl_HargaKaroseriH);
+	
+}
+
 //------Screenshot------
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Showroom')]"]),0);

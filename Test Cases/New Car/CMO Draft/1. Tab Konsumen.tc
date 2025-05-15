@@ -4,152 +4,153 @@
    <name>1. Tab Konsumen</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>861603c8-008d-4f5f-96b9-ece2d4750181</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>
-      <id>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</id>
+      <id>a7601cc6-5d86-442d-b4f5-99f7945e05a3</id>
       <iterationEntity>
-         <iterationType>SPECIFIC</iterationType>
-         <value>1</value>
+         <iterationType>ALL</iterationType>
+         <value></value>
       </iterationEntity>
       <testDataId>Data Files/Sprint3Matrix</testDataId>
    </testDataLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
       <type>DATA_COLUMN</type>
       <value>konsumen</value>
       <variableId>ce5fc75f-2b99-442a-a89d-9bb26d8e6ecd</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
-      <type>DATA_COLUMN</type>
-      <value>K_Pekerjaan</value>
+      <testDataLinkId></testDataLinkId>
+      <type>DATA_COLUMN_INDEX</type>
+      <value></value>
       <variableId>c7f871c7-2a82-498b-b48c-45b6432073e7</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_PekerjaanPasangan</value>
+      <value></value>
       <variableId>ba559194-d084-422d-a4b7-6138bab95697</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_KodeEkonomi</value>
+      <value></value>
       <variableId>7e8246ed-f266-433b-9864-68d74498fdad</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_NamaPerusahaan</value>
+      <value></value>
       <variableId>36dff9df-0893-46c1-9afb-c17483c9289c</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_Jabatan</value>
+      <value></value>
       <variableId>eeb14f43-d964-431f-b925-65706f60d591</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TahunBerdiri</value>
+      <value></value>
       <variableId>1d9ea824-e23e-4d73-8776-362b5970c1ac</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_JenisUsaha</value>
+      <value></value>
       <variableId>20137d6c-95f1-4aaf-87ff-fedcff3d639e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TotalPenghasilan</value>
+      <value></value>
       <variableId>6048b23f-c7d4-45fe-8679-e076c70b101a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TotalPenghasilanPasangan</value>
+      <value></value>
       <variableId>28631768-9426-4e3d-915a-4b9457703f31</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TipeKK</value>
+      <value></value>
       <variableId>90dc51d4-8c70-476a-8005-8d1dedcd799c</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_PendidikanTerakhir</value>
+      <value></value>
       <variableId>b083c47a-8dae-4108-a870-dd4f86c3b0b4</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TipeBank</value>
+      <value></value>
       <variableId>57968e84-9f13-42dd-8293-bb011f143252</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_NoRek</value>
+      <value></value>
       <variableId>256694af-4bb9-4dd3-bc96-de219bcfbb0a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_NamaRek</value>
+      <value></value>
       <variableId>3c5a0ce2-bdfd-4c02-b8f7-2db996b31115</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_Pembayaran</value>
+      <value></value>
       <variableId>6f9038f2-12ba-4d7b-9506-911fd4236154</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_AutoDebetOrangLain</value>
+      <value></value>
       <variableId>16799e70-33bb-4e97-bf5a-f58fab254f44</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_RekAutoDebet</value>
+      <value></value>
       <variableId>b274f154-5dcd-4c07-9320-2af884211068</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_AutoDebetOrangLain</value>
+      <value></value>
       <variableId>d4818be3-5e76-44dc-a99d-c90dfa704130</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_NikAutoDebet</value>
+      <value></value>
       <variableId>ca3b9b4e-936d-417d-871c-e38c2548fccc</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_HubAutoDebet</value>
+      <value></value>
       <variableId>7906ea58-a215-48d7-8182-922ab04cb3dd</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_StatusRumah</value>
+      <value></value>
       <variableId>518b244d-c56b-4a23-a41f-21ba920f1bce</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>F_NamaIbuKandung</value>
+      <value></value>
       <variableId>17fc24cf-5833-4969-b045-45dadc0ba944</variableId>
    </variableLinks>
    <variableLinks>
@@ -195,33 +196,33 @@
       <variableId>30658f4e-6d94-4e81-8354-2f0808373442</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ROName</value>
       <variableId>47f1a505-9b04-4c79-ac49-0c872c2f09e7</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>RONik</value>
       <variableId>5ae992e9-78a9-4ff5-af6d-fea883dc21d8</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>RODob</value>
       <variableId>ed1eb448-0412-4a1c-816d-2c74e669a895</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ROHandphoneNumberPrefix</value>
       <variableId>e79e7db7-f164-437a-8416-cf2f34624bac</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>ROHandphoneNumber</value>
       <variableId>d909bd99-ede6-4f9d-a328-f8b3192aba52</variableId>
    </variableLinks>
    <variableLinks>
@@ -249,21 +250,21 @@
       <variableId>5a774d44-5443-480f-be19-c9ce6fb3912a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_StatusKepemilikanRumah</value>
+      <value></value>
       <variableId>29796758-b5f8-421e-822d-423de734384a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_NpwpMilik</value>
+      <value>BaruNPWPMilik</value>
       <variableId>f8e698c7-a125-4028-a412-a413f1fa9ed0</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_nomorNPWP</value>
+      <value></value>
       <variableId>b7fc6a55-4fc7-483c-a43b-6ffaaef3ab69</variableId>
    </variableLinks>
    <variableLinks>
@@ -327,21 +328,21 @@
       <variableId>125005e9-f530-4216-bbbf-2a46621fc4d3</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_lamaTahunBekerja</value>
+      <value></value>
       <variableId>d1482890-bde4-4b32-b840-ec7b363bff60</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_lamaBulanBekerja</value>
+      <value></value>
       <variableId>5dbcf8d9-299f-43da-8521-12eb3b06172f</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_umkm</value>
+      <value></value>
       <variableId>a7320b5e-a099-45c5-bc89-1e34761cc42b</variableId>
    </variableLinks>
    <variableLinks>
@@ -375,46 +376,52 @@
       <variableId>3ed19f0f-24e7-4e18-8235-d98313766901</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId>a7601cc6-5d86-442d-b4f5-99f7945e05a3</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_luasTanah</value>
+      <value></value>
       <variableId>11689602-0594-4ab0-8bdd-7b40ac28f7ee</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_luasBangunan</value>
+      <value></value>
       <variableId>5288aa0f-de79-4636-895c-1b6204212ce9</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_Status</value>
+      <value></value>
       <variableId>6f2a8c0b-6ecc-4237-8e86-f95dda027586</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_TipeDokumen</value>
+      <value></value>
       <variableId>086d876f-321b-4d09-8857-fe3a137a2b1a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_deskripsiPekerjaan</value>
+      <value></value>
       <variableId>fac528fe-e297-4df5-8701-2232c60c7314</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_PekerjaanPasangan</value>
+      <value></value>
       <variableId>f8fecb74-48eb-49a0-b9c3-8f49c5914cbc</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId>5822c115-6f7f-4b7b-b6de-fc99cdb4f6bb</testDataLinkId>
+      <testDataLinkId></testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value>K_deskripsiPekerjaanPasangan</value>
+      <value></value>
       <variableId>f1c94c6d-9d40-462e-b6ba-d3f4f1536c41</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>54bdb20a-e6a9-4c1b-beb0-5fd1e4ab2500</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -884,5 +891,12 @@
       <id>f1c94c6d-9d40-462e-b6ba-d3f4f1536c41</id>
       <masked>false</masked>
       <name>deskripsiPekerjaanPasangan</name>
+   </variable>
+   <variable>
+      <defaultValue>'Ya'</defaultValue>
+      <description></description>
+      <id>54bdb20a-e6a9-4c1b-beb0-5fd1e4ab2500</id>
+      <masked>false</masked>
+      <name>PengajuanPemohon</name>
    </variable>
 </TestCaseEntity>

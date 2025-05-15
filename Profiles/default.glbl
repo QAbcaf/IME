@@ -6,7 +6,7 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'20200500'</initValue>
+      <initValue>'20231218'</initValue>
       <name>usernameCMO</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
@@ -153,5 +153,15 @@
       <description></description>
       <initValue>'\\Screenshot\\NewCar'</initValue>
       <name>screenshotPathNewCar</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Assets\\Faktur.png'</initValue>
+      <name>pengajuanPemohonPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Assets\\selfieEdit.png'</initValue>
+      <name>buktiSegmentasiPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

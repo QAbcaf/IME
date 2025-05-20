@@ -72,7 +72,7 @@ switch(tujuanPembiayaan) {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Lainnya'])[2]"]));
 	break;
 }
-
+//test
 
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaIbuKandung'])[1]"]), nama_ibu_kandung);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaSID'])[1]"]), namaSID);

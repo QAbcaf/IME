@@ -114,9 +114,10 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()=' K
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@id='keterangan']"]), P_KeteranganCMO)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//button[text()=' Simpan ']"]))
 
+// --- Screenshoot ---
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '14. Tab Penyimpangan + '/' + Penyimpangan (1)') + '.png', FailureHandling.OPTIONAL)
+
 
 // Selanjutnya
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Penyimpangan') + '.png', FailureHandling.STOP_ON_FAILURE);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[text()=' Selanjutnya '])[3]"]))
 WebUI.delay(3)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + 'Tab Penyimpangan Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);

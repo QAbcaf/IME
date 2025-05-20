@@ -57,11 +57,11 @@ switch(ROCarCondition) {
 
 WebUI.delay(5)
 
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '1. Input Matching RO') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '1. Input Matching RO') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 // Click Matching Button
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Matching']"]))
 
 // Hasil Matching
 WebUI.delay(15)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '2. Hasil Matching Existing') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '2. Hasil Matching Existing') + '.png', FailureHandling.STOP_ON_FAILURE)

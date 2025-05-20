@@ -157,7 +157,7 @@ public class GlobalVariable {
     /**
      * <p></p>
      */
-    public static Object screenshotPathNewCar
+    public static Object screenshotPathNewCarKKB
      
     /**
      * <p></p>
@@ -168,6 +168,11 @@ public class GlobalVariable {
      * <p></p>
      */
     public static Object buktiSegmentasiPath
+     
+    /**
+     * <p></p>
+     */
+    public static Object loanDataPath
      
 
     static {
@@ -205,9 +210,10 @@ public class GlobalVariable {
             screenshotPathChecker = selectedVariables['screenshotPathChecker']
             fakturPath = selectedVariables['fakturPath']
             formAPath = selectedVariables['formAPath']
-            screenshotPathNewCar = selectedVariables['screenshotPathNewCar']
+            screenshotPathNewCarKKB = selectedVariables['screenshotPathNewCarKKB']
             pengajuanPemohonPath = selectedVariables['pengajuanPemohonPath']
             buktiSegmentasiPath = selectedVariables['buktiSegmentasiPath']
+            loanDataPath = selectedVariables['loanDataPath']
             
         } catch (Exception e) {
             TestCaseMain.logGlobalVariableError(e)

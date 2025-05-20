@@ -1257,6 +1257,30 @@
       <value>pengajuanChassis</value>
       <variableId>7dd57593-e7d1-4cda-a7ed-5d456f515262</variableId>
    </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_SelfCover</value>
+      <variableId>f45331ff-ae49-40e7-8750-6098f589eb3b</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_CoverMundur</value>
+      <variableId>5ff0ad21-1bc6-434b-8da2-cc29153ff3b9</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_PeriodeStartCoverMundur</value>
+      <variableId>1e91884e-0b7e-4424-93dd-00ebcf015e19</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>5f546efe-15bf-420b-a612-c6ff0eb17cbc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_PeriodeEndCoverMundur</value>
+      <variableId>f41e080f-be97-4b64-b95d-f05f1eacde67</variableId>
+   </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
       <description></description>
@@ -2705,5 +2729,33 @@
       <id>7dd57593-e7d1-4cda-a7ed-5d456f515262</id>
       <masked>false</masked>
       <name>pengajuanChassis</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f45331ff-ae49-40e7-8750-6098f589eb3b</id>
+      <masked>false</masked>
+      <name>L_SelfCover</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>5ff0ad21-1bc6-434b-8da2-cc29153ff3b9</id>
+      <masked>false</masked>
+      <name>L_CoverMundur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>1e91884e-0b7e-4424-93dd-00ebcf015e19</id>
+      <masked>false</masked>
+      <name>L_PeriodeStartCoverMundur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>f41e080f-be97-4b64-b95d-f05f1eacde67</id>
+      <masked>false</masked>
+      <name>L_PeriodeEndCoverMundur</name>
    </variable>
 </TestCaseEntity>

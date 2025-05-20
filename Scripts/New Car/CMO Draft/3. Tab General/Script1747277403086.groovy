@@ -88,6 +88,11 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id=
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='jabatanPerekomendasi']"]), G_Jabatan);
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='cabangPerekomendasi']"]), G_Cabang);
 
+// --- Screeenshoot ---
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '10. Tab General + '/' + General (1)') + '.png', FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='namaPerekomendasi']"]), 0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '10. Tab General + '/' + General (2)') + '.png', FailureHandling.OPTIONAL)
 
+// --- Selanjutnya ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='pengajuan-content overflow-auto ng-star-inserted']//div[@class='col-8 pl-2']"]));
 

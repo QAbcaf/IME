@@ -151,8 +151,8 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'\\Screenshot\\NewCar'</initValue>
-      <name>screenshotPathNewCar</name>
+      <initValue>'\\Screenshot\\NewCar_KKB'</initValue>
+      <name>screenshotPathNewCarKKB</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
@@ -163,5 +163,10 @@
       <description></description>
       <initValue>'\\Assets\\selfieEdit.png'</initValue>
       <name>buktiSegmentasiPath</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'\\Assets\\KITAS.jpg'</initValue>
+      <name>loanDataPath</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

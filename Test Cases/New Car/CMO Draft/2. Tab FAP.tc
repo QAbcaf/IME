@@ -4,6 +4,7 @@
    <name>2. Tab FAP</name>
    <tag></tag>
    <comment></comment>
+   <recordOption>OTHER</recordOption>
    <testCaseGuid>83db7861-100c-4204-ab28-870790af6459</testCaseGuid>
    <testDataLinks>
       <combinationType>ONE</combinationType>

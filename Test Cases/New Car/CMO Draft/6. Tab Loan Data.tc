@@ -204,169 +204,169 @@
    <variableLinks>
       <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value></value>
+      <value>L_PaketDP</value>
       <variableId>eeaa11c7-17d8-42bd-a5c0-bcba7e5d0d4f</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value></value>
+      <value>L_CarInsuranceCorp</value>
       <variableId>1032f95b-7364-40fe-aec4-eaffd593e639</variableId>
    </variableLinks>
    <variableLinks>
       <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
       <type>DATA_COLUMN</type>
-      <value></value>
+      <value>L_CarInsuranceBranch</value>
       <variableId>cb7720dc-1149-4225-9b45-04ae750b30c9</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>JenisPengajuan</value>
       <variableId>8275ec18-0217-4193-85d8-4c1ef48a97a2</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruPaket</value>
       <variableId>b8e22ab0-5b88-4131-ac76-4ace3047905e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruOTR</value>
       <variableId>46d00484-0866-4980-bedf-7e5a8c464fc3</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruPersenDP</value>
       <variableId>c77bc186-0b88-4cdc-ae27-562aaf71d456</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruResidual</value>
       <variableId>86ec3674-9b0f-470d-8020-f956cb91aeca</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruTenor</value>
       <variableId>9319b914-d5c2-4c1d-b954-2ca5f0837bd7</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruFlatRate</value>
       <variableId>11887b05-f0c0-46d2-bdd5-026f0f12d469</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruEffRate</value>
       <variableId>b6aad1c1-60dd-4bab-a573-a69fa10b4836</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaAdmin</value>
       <variableId>2f1c498e-e115-4ca6-bdc8-344381a95e49</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaProvisi</value>
       <variableId>297776b8-916e-4a9b-8195-f7f3d32f5688</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruLoanType</value>
       <variableId>ecf40e21-4246-4720-9f11-0e3b3b61cb0d</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaAdminType</value>
       <variableId>77252763-51cf-41b8-a7be-845cfbd4ce53</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaProvisiType</value>
       <variableId>54f4f235-4817-4202-9325-14f946e7e69f</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruTipeAsuransi</value>
       <variableId>fa47cf77-a30d-4e59-bc67-3e92bc6e6ad1</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruDetailAsuransiCheck</value>
       <variableId>123c5f73-b4a3-47b0-8140-ba1623733c61</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruNominalDeduction</value>
       <variableId>7652a242-6f49-480f-9732-ec9935c4cdb4</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruDetailOTR</value>
       <variableId>29ea3524-216c-4005-b3f6-dcfaba4183ad</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruDetailLoanType</value>
       <variableId>2737b1ea-8731-4dbb-8428-92f801d406fb</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruAsuransiLainnyaType</value>
       <variableId>c07e3b74-dfae-40ae-87a9-c5c5058e2eef</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruAsuransiLainnyaMaskapai</value>
       <variableId>3d722669-d515-4e6e-bb38-6ee6a4240c45</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruAsuransiLainnyaPertanggungan</value>
       <variableId>969af974-b316-4a81-ba3a-c95fed9a0803</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruAsuransiLainnyaLoanType</value>
       <variableId>b14e502d-f905-4c26-919c-ed41d195de4d</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaLainnyaFee</value>
       <variableId>53abec18-ecae-4006-b213-071324cd5a9a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_BaruBiayaLainnyaType</value>
       <variableId>ebd72cc6-9d3b-477a-a58e-e058c2d24a3e</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>d54c2df4-9070-418f-a680-e925f9899762</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_TJH</value>
       <variableId>e23b0b47-3c23-4234-a3ae-3e59f01d3a23</variableId>
    </variableLinks>
    <variableLinks>
@@ -374,6 +374,30 @@
       <type>DEFAULT</type>
       <value></value>
       <variableId>37a35e5d-e665-4c96-80a9-f886adbd4f73</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>cae04fab-40f0-459e-94ec-eca71e3a19a6</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c3f93779-cb4c-4f29-b0a5-6a799b332cbc</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>9f314029-cb02-4b8d-9555-5e36f6df84e7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>88a9cfe7-050e-412a-8364-e4cb10adfd75</variableId>
    </variableLinks>
    <variable>
       <defaultValue>''</defaultValue>
@@ -794,5 +818,33 @@
       <id>37a35e5d-e665-4c96-80a9-f886adbd4f73</id>
       <masked>false</masked>
       <name>L_AsuransiLainnyaTenor</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>cae04fab-40f0-459e-94ec-eca71e3a19a6</id>
+      <masked>false</masked>
+      <name>L_SelfCover</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>c3f93779-cb4c-4f29-b0a5-6a799b332cbc</id>
+      <masked>false</masked>
+      <name>L_CoverMundur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>9f314029-cb02-4b8d-9555-5e36f6df84e7</id>
+      <masked>false</masked>
+      <name>L_PeriodeStartCoverMundur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>88a9cfe7-050e-412a-8364-e4cb10adfd75</id>
+      <masked>false</masked>
+      <name>L_PeriodeEndCoverMundur</name>
    </variable>
 </TestCaseEntity>

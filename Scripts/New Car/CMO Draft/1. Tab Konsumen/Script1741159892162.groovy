@@ -80,19 +80,14 @@ switch(BaruNPWPMilik) {
 
 WebUI.delay(3);
 
-switch(PengajuanPemohon) {
-	case 'Ya':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='Ya']"]));
-		WebUI.delay(5);
-		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//img[@alt='Tambah Dokumen']"]), 0);
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//img[@alt='Tambah Dokumen']"]), FailureHandling.STOP_ON_FAILURE);
-		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='capture-option']//input[@type='file']"]), pengajuanPemohonPath, FailureHandling.OPTIONAL);
-		break;
-	case 'Tidak':
-		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='Tidak']"]));
-		break;
+if (PengajuanPemohon == 'Yes') {
+	WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='Ya']"]));
+	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='Ya']"]), 0);
+	WebUI.delay(2);
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//img[@alt='Tambah Dokumen']"]), FailureHandling.STOP_ON_FAILURE);
+	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='capture-option']//input[@type='file']"]), pengajuanPemohonPath, FailureHandling.STOP_ON_FAILURE);
+	WebUI.delay(5)
 }
-
 
 // Pekerjaan
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//body/app-root/app-protected-layout[@class='ng-star-inserted']/app-form-input-pengajuan[@class='ng-star-inserted']/div[@class='mobile-container']/div[@class='fixed-top-container']/div[@class='tabset-container-overflow ng-star-inserted']/tabset[@type='pills']/div[@class='tab-content']/tab[@id='tab_konsumen']/div[@class='pengajuan-content overflow-auto']/app-tab-konsumen[@class='ng-star-inserted']/div[@class='container overflow-auto mb-6']/bcaf-accordion[@class='ng-star-inserted']/div[@class='bcaf-accordion-container theme-bcaf single-open']/ac-group[2]/div[1]/div[1]"]));
@@ -209,13 +204,12 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id=
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Cek Validasi Rekening ']"]));
 WebUI.delay(1);
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '15 Tab Konsumen'  + '/' + 'KK Tabungan dan Kartu Nama') + '.png', FailureHandling.STOP_ON_FAILURE)
-
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[3]"]));
 
 // Bukti Tempat Tinggal
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[3]"]));
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Status Rumah']"]));
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='$statusKepemilikanRumah'])[1]"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//strong[text()='${statusKepemilikanRumah}']"]));
+WebUI.delay(3);
 
 
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='luasTanah']"]), luasTanah);
@@ -224,52 +218,50 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id=
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//app-form-data-kepemilikan//img[@class='img-placeholder'])[1]"]));
 WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), ktpPath);
-WebUI.delay(1);
+WebUI.delay(5);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//option[@value='${status_rumah}']"]), FailureHandling.OPTIONAL);
-WebUI.selectOptionByValue(findTestObject('Object Repository/xpath', ['xpath' : "//select"]), status_rumah, false);
+WebUI.delay(2);
+//WebUI.selectOptionByValue(findTestObject('Object Repository/xpath', ['xpath' : "//select"]), status_rumah, false);
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Simpan']"]));
-WebUI.delay(1);
+WebUI.delay(2);
 
 //------------Screenshot------------
 
 //Section Data Konsumen
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[1]"]));
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//a//*[text()='Konsumen']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '8. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (1)') + '.png', FailureHandling.OPTIONAL)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@value='konsumen']/following-sibling::span"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '9. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (2)') + '.png', FailureHandling.OPTIONAL)
 
 //Section Pekerjaan
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[2]"]));
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[1]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '10. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (3)') + '.png', FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='jenisUsaha']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '11. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (4)') + '.png', FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='pekerjaanPasangan']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '12. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (5)') + '.png', FailureHandling.OPTIONAL)
 
 //Section KK dan Tabungan
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[3]"]));
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[1]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '13. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (6)') + '.png', FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='Pembayaran']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '14. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (7)') + '.png', FailureHandling.OPTIONAL)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='totalMutasiDebit']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '15. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (8)') + '.png', FailureHandling.OPTIONAL)
  
 //Section Bukti Tempat Tinggal
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[4]"]));
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='ac-title'])[1]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '16. Tab Konsumen') + '.png', FailureHandling.OPTIONAL)
-
-//------------Screenshot------------
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '8. Tab Konsumen + '/' + Konsumen (9)') + '.png', FailureHandling.OPTIONAL)
 
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='col-8 pl-2']"]));
 WebUI.delay(3)
-WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '17.Tab Konsumen'  + '/' + 'Konsumen Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE)
 

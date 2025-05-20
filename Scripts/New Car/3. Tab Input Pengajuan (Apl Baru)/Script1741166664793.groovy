@@ -33,155 +33,156 @@ String baseDir = System.getProperty('user.dir')
 
 // ---------------- Pengajuan ----------	----------
 // Tab Konsumen
-//Map<String, Object> variableMap1 = [
-//	'konsumen': konsumen,
-//	'status': K_Status,
-//	'tipe_dokumen': K_TipeDokumen,
-//	'pekerjaan_k': K_Pekerjaan,
-//	'kode_ekonomi': K_KodeEkonomi,
-//	'nama_perusahaan': K_NamaPerusahaan,
-//	'jabatan': K_Jabatan,
-//	'tahun_berdiri': K_TahunBerdiri,
-//	'jenis_usaha': K_JenisUsaha,
-//	'total_penghasilan_k': K_TotalPenghasilan,
-//	'pekerjaan_pasangan': K_PekerjaanPasangan,
-//	'total_penghasilan_pasangan': K_TotalPenghasilanPasangan,
-//	'tipe_kk': K_TipeKK,
-//	'pendidikan_terakhir': K_PendidikanTerakhir,
-//	'tipe_bank': K_TipeBank,
-//	'no_rek': K_NoRek,
-//	'nama_rek': K_NamaRek,
-//	'pembayaran': K_Pembayaran,
-//	'autodebet_orglain': K_AutoDebetOrangLain,
-//	'rek_autodebet': K_RekAutoDebet,
-//	'nama_autodebet': K_NamaAutoDebet,
-//	'nik_autodebet': K_NikAutoDebet,
-//	'hubungan_autodebet': K_HubAutoDebet,
-//	'statusKepemilikanRumah': K_StatusKepemilikanRumah,
-//	'status_rumah': K_StatusRumah,
-//	'NPWP_Nomor' : K_nomorNPWP,
-//	'PengajuanPemohon' : K_PengajuanPemohon,
-//	'BaruNPWPMilik' : K_NpwpMilik,
-//	'lamaTahunBekerja' : K_lamaTahunBekerja,
-//	'lamaBulanBekerja' : K_lamaBulanBekerja,
-//	'K_umkm' : K_umkm,
-//	'lamaTahunBekerjaPasangan':K_lamaTahunBekerjaPasangan,
-//	'lamaBulanBekerjaPasangan':K_lamaBulanBekerjaPasnagan,
-//	'totalMutasiDebit' : K_totalMutasiDebit,
-//	'totalMutasiKredit' : K_totalMutasiKredit,
-//	'saldoMengendap': K_saldoMengendap,
-//	'luasTanah': K_luasTanah,
-//	'luasBangunan': K_luasBangunan,
-//	'deskripsiPekerjaan': K_deskripsiPekerjaan,
-//	'deskripsiPekerjaanPasangan': K_deskripsiPekerjaanPasangan,
-//]
-//
-//List<String> variablesToPass1 = []
-//for (String columnHeader : variableMap1.keySet()) {
-//	Object value = variableMap1.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass1.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables1 = [:]
-//for (String variableName : variablesToPass1) {
-//	variables1.put(variableName, variableMap1.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/1. Tab Konsumen'), variables1, FailureHandling.CONTINUE_ON_FAILURE)
+Map<String, Object> variableMap1 = [
+	'konsumen': konsumen,
+	'status': K_Status,
+	'tipe_dokumen': K_TipeDokumen,
+	'pekerjaan_k': K_Pekerjaan,
+	'kode_ekonomi': K_KodeEkonomi,
+	'nama_perusahaan': K_NamaPerusahaan,
+	'jabatan': K_Jabatan,
+	'tahun_berdiri': K_TahunBerdiri,
+	'jenis_usaha': K_JenisUsaha,
+	'total_penghasilan_k': K_TotalPenghasilan,
+	'pekerjaan_pasangan': K_PekerjaanPasangan,
+	'total_penghasilan_pasangan': K_TotalPenghasilanPasangan,
+	'tipe_kk': K_TipeKK,
+	'pendidikan_terakhir': K_PendidikanTerakhir,
+	'tipe_bank': K_TipeBank,
+	'no_rek': K_NoRek,
+	'nama_rek': K_NamaRek,
+	'pembayaran': K_Pembayaran,
+	'autodebet_orglain': K_AutoDebetOrangLain,
+	'rek_autodebet': K_RekAutoDebet,
+	'nama_autodebet': K_NamaAutoDebet,
+	'nik_autodebet': K_NikAutoDebet,
+	'hubungan_autodebet': K_HubAutoDebet,
+	'statusKepemilikanRumah': K_StatusKepemilikanRumah,
+	'status_rumah': K_StatusRumah,
+	'NPWP_Nomor' : K_nomorNPWP,
+	'PengajuanPemohon' : K_PengajuanPemohon,
+	'BaruNPWPMilik' : K_NpwpMilik,
+	'lamaTahunBekerja' : K_lamaTahunBekerja,
+	'lamaBulanBekerja' : K_lamaBulanBekerja,
+	'K_umkm' : K_umkm,
+	'lamaTahunBekerjaPasangan':K_lamaTahunBekerjaPasangan,
+	'lamaBulanBekerjaPasangan':K_lamaBulanBekerjaPasnagan,
+	'totalMutasiDebit' : K_totalMutasiDebit,
+	'totalMutasiKredit' : K_totalMutasiKredit,
+	'saldoMengendap': K_saldoMengendap,
+	'luasTanah': K_luasTanah,
+	'luasBangunan': K_luasBangunan,
+	'deskripsiPekerjaan': K_deskripsiPekerjaan,
+	'deskripsiPekerjaanPasangan': K_deskripsiPekerjaanPasangan,
+]
+
+List<String> variablesToPass1 = []
+for (String columnHeader : variableMap1.keySet()) {
+	Object value = variableMap1.get(columnHeader)
+	if (value != null) {
+		variablesToPass1.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables1 = [:]
+for (String variableName : variablesToPass1) {
+	variables1.put(variableName, variableMap1.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/1. Tab Konsumen'), variables1, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Tab FAP
-//Map<String, Object> variableMap2 = [
-//	'konsumen': konsumen,
-//	'nama_ibu_kandung': F_NamaIbuKandung,
-//	'lama_tahun': F_LamaTahun,
-//	'lama_bulan': F_LamaBulan,
-//	'jumlah_tanggungan': F_JumlahTanggungan,
-//	'kode_area': F_KodeArea,
-//	'nomor_telepon': F_NomorTelepon,
-//	'namaSID' : F_NamaSID,
-//	'emailSama' : F_EmailSama,
-//	'tujuanPembiayaan' : F_tujuanPembiayaan,
-//]
-//
-//List<String> variablesToPass2 = []
-//for (String columnHeader : variableMap2.keySet()) {
-//	Object value = variableMap2.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass2.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables2 = [:]
-//for (String variableName : variablesToPass2) {
-//	variables2.put(variableName, variableMap2.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2. Tab FAP'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
+Map<String, Object> variableMap2 = [
+	'konsumen': konsumen,
+	'nama_ibu_kandung': F_NamaIbuKandung,
+	'lama_tahun': F_LamaTahun,
+	'lama_bulan': F_LamaBulan,
+	'jumlah_tanggungan': F_JumlahTanggungan,
+	'kode_area': F_KodeArea,
+	'nomor_telepon': F_NomorTelepon,
+	'namaSID' : F_NamaSID,
+	'emailSama' : F_EmailSama,
+	'tujuanPembiayaan' : F_tujuanPembiayaan,
+]
+
+List<String> variablesToPass2 = []
+for (String columnHeader : variableMap2.keySet()) {
+	Object value = variableMap2.get(columnHeader)
+	if (value != null) {
+		variablesToPass2.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables2 = [:]
+for (String variableName : variablesToPass2) {
+	variables2.put(variableName, variableMap2.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2. Tab FAP'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 // Tab General
-//Map<String, Object> variableMap3 = [
-//	'G_Segmentasi' : G_Segmentasi,
-//	'G_Membership' : G_Membership,
-//	'G_LamaMembership' : G_LamaMembership,
-//	'G_JenisDebitur' : G_JenisDebitur,
-//	'G_Plafond' : G_Plafond,
-//	'G_SalesType' : G_SalesType,
-//	'G_SalesOffice' : G_SalesOffice,
-//	'G_SalesAgent' : G_SalesAgent,
-//	'G_RekomendasiNama' : G_RekomendasiNama,
-//	'G_Jabatan' : G_Jabatan,
-//	'G_Cabang' : G_Cabang
-//]
-//List<String> variablesToPass3 = []
-//for (String columnHeader : variableMap3.keySet()) {
-//	Object value = variableMap3.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass3.add(columnHeader)
-//	}
-//}
-//Map<String, Object> variables3 = [:]
-//for (String variableName : variablesToPass3) {
-//	variables3.put(variableName, variableMap3.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/3. Tab General'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
+Map<String, Object> variableMap3 = [
+	'konsumen': konsumen,
+	'G_Segmentasi' : G_Segmentasi,
+	'G_Membership' : G_Membership,
+	'G_LamaMembership' : G_LamaMembership,
+	'G_JenisDebitur' : G_JenisDebitur,
+	'G_Plafond' : G_Plafond,
+	'G_SalesType' : G_SalesType,
+	'G_SalesOffice' : G_SalesOffice,
+	'G_SalesAgent' : G_SalesAgent,
+	'G_RekomendasiNama' : G_RekomendasiNama,
+	'G_Jabatan' : G_Jabatan,
+	'G_Cabang' : G_Cabang,
+]
+List<String> variablesToPass3 = []
+for (String columnHeader : variableMap3.keySet()) {
+	Object value = variableMap3.get(columnHeader)
+	if (value != null) {
+		variablesToPass3.add(columnHeader)
+	}
+}
+Map<String, Object> variables3 = [:]
+for (String variableName : variablesToPass3) {
+	variables3.put(variableName, variableMap3.get(variableName))
+}
 
-//// Tab CP
-//Map<String, Object> variableMap4 = [
-//	'konsumen': konsumen,
-//	'status': K_Status,
-//	'CP_Nama': CP_Nama,
-//	'CP_HubKonsumen': CP_HubKonsumen,
-//	'CP_KodePos': CP_KodePos,
-//	'CP_NoHp': CP_NoHp,
-//	'CP_Prefix': CP_Prefix,
-//	'CP_Alamat': CP_Alamat,
-//	'CP_Kota': CP_Kota,
-//	'CP_isPenjamin': CP_isPenjamin,
-//	'CP_PenjaminHubDebitur': CP_PenjaminHubDebitur,
-//	'CP_IdentitasPasanganPenjamin': CP_IdentitasPasanganPenjamin,
-//	'CP_PasanganPenjaminNama': CP_PasanganPenjaminNama,
-//	'CP_PasanganPenjaminNIK': CP_PasanganPenjaminNIK,
-//	'CP_PasanganPenjaminDOB': CP_PasanganPenjaminDOB,
-//]
-//
-//List<String> variablesToPass4 = []
-//for (String columnHeader : variableMap4.keySet()) {
-//	Object value = variableMap4.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass4.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables4 = [:]
-//for (String variableName : variablesToPass4) {
-//	variables4.put(variableName, variableMap4.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/4. Tab ECN dan Penjamin'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/3. Tab General'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Tab CP
+Map<String, Object> variableMap4 = [
+	'konsumen': konsumen,
+	'status': K_Status,
+	'CP_Nama': CP_Nama,
+	'CP_HubKonsumen': CP_HubKonsumen,
+	'CP_KodePos': CP_KodePos,
+	'CP_NoHp': CP_NoHp,
+	'CP_Prefix': CP_Prefix,
+	'CP_Alamat': CP_Alamat,
+	'CP_Kota': CP_Kota,
+	'CP_isPenjamin': CP_isPenjamin,
+	'CP_PenjaminHubDebitur': CP_PenjaminHubDebitur,
+	'CP_IdentitasPasanganPenjamin': CP_IdentitasPasanganPenjamin,
+	'CP_PasanganPenjaminNama': CP_PasanganPenjaminNama,
+	'CP_PasanganPenjaminNIK': CP_PasanganPenjaminNIK,
+	'CP_PasanganPenjaminDOB': CP_PasanganPenjaminDOB,
+]
+
+List<String> variablesToPass4 = []
+for (String columnHeader : variableMap4.keySet()) {
+	Object value = variableMap4.get(columnHeader)
+	if (value != null) {
+		variablesToPass4.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables4 = [:]
+for (String variableName : variablesToPass4) {
+	variables4.put(variableName, variableMap4.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/4. Tab ECN dan Penjamin'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
 
 //// Tab Matching Result
 ////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
@@ -191,7 +192,7 @@ String baseDir = System.getProperty('user.dir')
 ////WebUI.delay(1)
 ////
 ////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"], FailureHandling.CONTINUE_ON_FAILURE))
-////WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '27. Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.CONTINUE_ON_FAILURE);
+////WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '27. Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.CONTINUE_ON_FAILURE);
 ////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"], FailureHandling.CONTINUE_ON_FAILURE))
 
 // Tab Collateral
@@ -233,107 +234,111 @@ for (String variableName : variablesToPass5) {
 
 Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/5. Tab Collateral'), variables5, FailureHandling.CONTINUE_ON_FAILURE)
 
-//// Tab Loan Data
-//Map<String, Object> variableMap6 = [ 
-//	'konsumen': konsumen,
-//	'L_DetailTipeAsuransiAll': L_DetailTipeAsuransiAll,
-//	'L_DetailTJHAll': L_DetailTJHAll,
-//	'L_DetailAsuransiNominalDeductionPersen': L_DetailAsuransiNominalDeductionPersen,
-//	'L_DetailAsuransiNominalDeduction': L_DetailAsuransiNominalDeduction,
-//	'L_DetailAsuransiLoanType': L_DetailAsuransiLoanType,
-//	'L_PaketDP': L_PaketDP,
-//	'L_CarInsuranceCorp': L_CarInsuranceCorp,
-//	'L_CarInsuranceBranch': L_CarInsuranceBranch,
-//	'L_MaskapaiAsuransi': L_MaskapaiAsuransi,
-//	'L_Branch': L_Branch,
-//	'JenisPengajuan': JenisPengajuan,
-//	'L_BaruPaket': L_BaruPaket,
-//	'L_BaruOTR': L_BaruOTR,
-//	'L_BaruPersenDP': L_BaruPersenDP,
-//	'L_BaruResidual': L_BaruResidual,
-//	'L_BaruTenor': L_BaruTenor,
-//	'L_BaruFlatRate': L_BaruFlatRate,
-//	'L_BaruEffRate': L_BaruEffRate,
-//	'L_BaruBiayaAdmin': L_BaruBiayaAdmin,
-//	'L_BaruBiayaProvisi': L_BaruBiayaProvisi,
-//	'L_BaruLoanType': L_BaruLoanType,
-//	'L_BaruBiayaAdminType': L_BaruBiayaAdminType,
-//	'L_BaruBiayaProvisiType': L_BaruBiayaProvisiType,
-//	'L_BaruTipeAsuransi': L_BaruTipeAsuransi,
-//	'L_BaruDetailAsuransiCheck': L_BaruDetailAsuransiCheck,
-//	'L_BaruNominalDeduction': L_BaruNominalDeduction,
-//	'L_BaruDetailOTR': L_BaruDetailOTR,
-//	'L_BaruDetailLoanType': L_BaruDetailLoanType,
-//	'L_BaruAsuransiLainnyaType': L_BaruAsuransiLainnyaType,
-//	'L_BaruAsuransiLainnyaMaskapai': L_BaruAsuransiLainnyaMaskapai,
-//	'L_BaruAsuransiLainnyaPertanggungan': L_BaruAsuransiLainnyaPertanggungan,
-//	'L_BaruAsuransiLainnyaLoanType': L_BaruAsuransiLainnyaLoanType,
-//	'L_BaruBiayaLainnyaFee': L_BaruBiayaLainnyaFee,
-//	'L_BaruBiayaLainnyaType': L_BaruBiayaLainnyaType,
-//	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
-//	'L_TJH': L_TJH,
-//	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
-//]
-//
-//List<String> variablesToPass6 = []
-//for (String columnHeader : variableMap6.keySet()) {
-//	Object value = variableMap6.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass6.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables6 = [:]
-//for (String variableName : variablesToPass6) {
-//	variables6.put(variableName, variableMap6.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/6. Tab Loan Data'), variables6, FailureHandling.CONTINUE_ON_FAILURE)
+// Tab Loan Data
+Map<String, Object> variableMap6 = [ 
+	'konsumen': konsumen,
+	'L_DetailTipeAsuransiAll': L_DetailTipeAsuransiAll,
+	'L_DetailTJHAll': L_DetailTJHAll,
+	'L_DetailAsuransiNominalDeductionPersen': L_DetailAsuransiNominalDeductionPersen,
+	'L_DetailAsuransiNominalDeduction': L_DetailAsuransiNominalDeduction,
+	'L_DetailAsuransiLoanType': L_DetailAsuransiLoanType,
+	'L_PaketDP': L_PaketDP,
+	'L_CarInsuranceCorp': L_CarInsuranceCorp,
+	'L_CarInsuranceBranch': L_CarInsuranceBranch,
+	'L_MaskapaiAsuransi': L_MaskapaiAsuransi,
+	'L_Branch': L_Branch,
+	'JenisPengajuan': JenisPengajuan,
+	'L_BaruPaket': L_BaruPaket,
+	'L_BaruOTR': L_BaruOTR,
+	'L_BaruPersenDP': L_BaruPersenDP,
+	'L_BaruResidual': L_BaruResidual,
+	'L_BaruTenor': L_BaruTenor,
+	'L_BaruFlatRate': L_BaruFlatRate,
+	'L_BaruEffRate': L_BaruEffRate,
+	'L_BaruBiayaAdmin': L_BaruBiayaAdmin,
+	'L_BaruBiayaProvisi': L_BaruBiayaProvisi,
+	'L_BaruLoanType': L_BaruLoanType,
+	'L_BaruBiayaAdminType': L_BaruBiayaAdminType,
+	'L_BaruBiayaProvisiType': L_BaruBiayaProvisiType,
+	'L_BaruTipeAsuransi': L_BaruTipeAsuransi,
+	'L_BaruDetailAsuransiCheck': L_BaruDetailAsuransiCheck,
+	'L_BaruNominalDeduction': L_BaruNominalDeduction,
+	'L_BaruDetailOTR': L_BaruDetailOTR,
+	'L_BaruDetailLoanType': L_BaruDetailLoanType,
+	'L_BaruAsuransiLainnyaType': L_BaruAsuransiLainnyaType,
+	'L_BaruAsuransiLainnyaMaskapai': L_BaruAsuransiLainnyaMaskapai,
+	'L_BaruAsuransiLainnyaPertanggungan': L_BaruAsuransiLainnyaPertanggungan,
+	'L_BaruAsuransiLainnyaLoanType': L_BaruAsuransiLainnyaLoanType,
+	'L_BaruBiayaLainnyaFee': L_BaruBiayaLainnyaFee,
+	'L_BaruBiayaLainnyaType': L_BaruBiayaLainnyaType,
+	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
+	'L_TJH': L_TJH,
+	'L_AsuransiLainnyaTenor': L_AsuransiLainnyaTenor,
+	'L_SelfCover' : L_SelfCover,
+	'L_CoverMundur' : L_CoverMundur,
+	'L_PeriodeStartCoverMundur' : L_PeriodeStartCoverMundur,
+	'L_PeriodeEndCoverMundur' : L_PeriodeEndCoverMundur,
+]
 
-//// Tab Penyimpangan
-//Map<String, Object> variableMap7 = [
-//	'konsumen': konsumen,
-//	'P_Penyimpangan': P_Penyimpangan,
-//	'P_Jabatan': P_Jabatan,
-//	'P_PenyimpanganTambahanDescription': P_PenyimpanganTambahanDescription,
-//	'P_KeteranganCMO': P_KeteranganCMO,
-//]
-//
-//List<String> variablesToPass7 = []
-//for (String columnHeader : variableMap7.keySet()) {
-//	Object value = variableMap7.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass7.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables7 = [:]
-//for (String variableName : variablesToPass7) {
-//	variables7.put(variableName, variableMap7.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/7. Tab Penyimpangan'), variables7, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//
-//// Tab Summary
-//Map<String, Object> variableMap8 = [
-//	'konsumen': konsumen,
-//]
-//
-//List<String> variablesToPass8 = []
-//for (String columnHeader : variableMap8.keySet()) {
-//	Object value = variableMap8.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass8.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables8 = [:]
-//for (String variableName : variablesToPass8) {
-//	variables8.put(variableName, variableMap8.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/8. Tab Summary'), variables8, FailureHandling.CONTINUE_ON_FAILURE)
+List<String> variablesToPass6 = []
+for (String columnHeader : variableMap6.keySet()) {
+	Object value = variableMap6.get(columnHeader)
+	if (value != null) {
+		variablesToPass6.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables6 = [:]
+for (String variableName : variablesToPass6) {
+	variables6.put(variableName, variableMap6.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/6. Tab Loan Data'), variables6, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Tab Penyimpangan
+Map<String, Object> variableMap7 = [
+	'konsumen': konsumen,
+	'P_Penyimpangan': P_Penyimpangan,
+	'P_Jabatan': P_Jabatan,
+	'P_PenyimpanganTambahanDescription': P_PenyimpanganTambahanDescription,
+	'P_KeteranganCMO': P_KeteranganCMO,
+]
+
+List<String> variablesToPass7 = []
+for (String columnHeader : variableMap7.keySet()) {
+	Object value = variableMap7.get(columnHeader)
+	if (value != null) {
+		variablesToPass7.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables7 = [:]
+for (String variableName : variablesToPass7) {
+	variables7.put(variableName, variableMap7.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/7. Tab Penyimpangan'), variables7, FailureHandling.CONTINUE_ON_FAILURE)
+
+
+// Tab Summary
+Map<String, Object> variableMap8 = [
+	'konsumen': konsumen,
+]
+
+List<String> variablesToPass8 = []
+for (String columnHeader : variableMap8.keySet()) {
+	Object value = variableMap8.get(columnHeader)
+	if (value != null) {
+		variablesToPass8.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables8 = [:]
+for (String variableName : variablesToPass8) {
+	variables8.put(variableName, variableMap8.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/8. Tab Summary'), variables8, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 // Edit

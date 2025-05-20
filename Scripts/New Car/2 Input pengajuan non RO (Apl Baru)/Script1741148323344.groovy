@@ -145,30 +145,30 @@ switch(BaruLoanType) {
 
 //hideElements();
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Foto Data Konsumen')]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 //showElements();
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Sandi Lahir')]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '4. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '4. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@id='alamat']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '5. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '5. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//form//div[12]/input[@type='text']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '6. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 if(BaruStatus == 'Married') {
 	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='pasangan_namaTanpaGelar']"]),0);
-	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.1. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '6.1. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@id='pasangan_alamat']"]),0);
-	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.2. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '6.2. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 	
 	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Input Loan Data')]"]),0);
-	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '6.3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '6.3. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 	
 }else WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Input Loan Data')]"]),0);
-	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCar)) + '/' + konsumen  + '/' + '7. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
+	WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '7. Input Pengajuan') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 // Setelah Pre Screening
 if(BaruStatus == 'Married') {

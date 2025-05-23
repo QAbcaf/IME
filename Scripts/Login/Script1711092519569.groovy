@@ -22,7 +22,6 @@ String baseDir = System.getProperty('user.dir')
 String login_role = GlobalVariable.loginRole
 
 // (Skenario 1)
-// ahahahha
 switch (login_role) {
     case 'cmo':
         username = GlobalVariable.usernameCMO

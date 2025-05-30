@@ -48,33 +48,47 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 // TAB FAP
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//a//*[text()='FAP']"]));
-
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-1']//img[@class='img-placeholder'])[1]"]));
-WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
-WebUI.delay(3)
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='d-flex gap-1']//img[@class='img-placeholder'])[1]"]));
-WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
 WebUI.delay(3)
 
+// --- Foto Dokumen FAP ---
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='FAP_TAMPAK_DEPAN']//div[contains(@class, 'document-preview')]"]));
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='FAP_TAMPAK_BELAKANG']//div[contains(@class, 'document-preview')]"]));
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
+WebUI.delay(5)
+
+// --- Foto Dokumen Persetujuan Konsumen ---
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='PERSETUJUAN_TAMPAK_DEPAN']//div[contains(@class, 'document-preview')]"]));
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
+WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='PERSETUJUAN_TAMPAK_BELAKANG']//div[contains(@class, 'document-preview')]"]));
+WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
+WebUI.delay(5)
+
+// --- Tujuan Pembiayaan ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='tujuanPembiayaan']"]));
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='$F_tujuanPembiayaan'])"]));
-switch(tujuanPembiayaan) {
-	case 'Investasi':
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Investasi'])[1]"]));
-	break;
-	case 'Modal Kerja':
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Modal Kerja'])[1]"]));
-	break;
-	case 'Konsumsi':
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Konsumsi'])[1]"]));
-	break;
-	case 'Lainnya':
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Lainnya'])[2]"]));
-	break;
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='$tujuanPembiayaan'])"]));
+
+if (tujuanPembiayaan == 'Investasi') {
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Investasi'])[1]"]));
+	WebUI.delay(5)
+} else if (tujuanPembiayaan == 'Modal Kerja') {
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Modal Kerja'])[1]"]));
+} else if (tujuanPembiayaan == 'Konsumsi') {
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Konsumsi'])[1]"]));
+} else if (tujuanPembiayaan == 'Lainnya') {
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='Lainnya'])[1]"]));
 }
 
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaIbuKandung'])[1]"]), nama_ibu_kandung);
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='namaSID'])[1]"]), namaSID);
+WebUI.delay(5)
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@name='namaIbuKandung']"]), nama_ibu_kandung, FailureHandling.CONTINUE_ON_FAILURE);
+WebUI.delay(1)
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='namaSID']"]), namaSID);
 
 WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='alamatUtamaKTP']/following-sibling::span"]));
 WebUI.delay(3)

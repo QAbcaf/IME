@@ -13,7 +13,7 @@
          <iterationType>SPECIFIC</iterationType>
          <value>1</value>
       </iterationEntity>
-      <testDataId>Data Files/Sprint3Matrix</testDataId>
+      <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>9200d269-10af-4958-bc0f-17b9f4ce80d0</testDataLinkId>
@@ -338,6 +338,6 @@
       <description></description>
       <id>83d31ee4-c7d2-4281-88e1-a153495fe7cc</id>
       <masked>false</masked>
-      <name>status</name>
+      <name>K_Status</name>
    </variable>
 </TestCaseEntity>

@@ -58,83 +58,83 @@ WebDriver driver = DriverFactory.getWebDriver()
 
 // TAB Summary
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Summary']"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '15. Tab Summary/Summary' + '/' + 'Tab Summary') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Summary' + '/' + 'Tab Summary') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 
 // Pre Screening
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[1]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '16. Tab Summary/Pre Screening' + '/' + 'Pre Screening') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Pre Screening' + '/' + 'Pre Screening') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[1]//*[@class='ac-title display']"]))
 
 // Konsumen
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[2]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '17. Tab Summary/Konsumen' + '/' + 'Konsumen (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Konsumen' + '/' + 'Konsumen (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//display-data[@class='ng-star-inserted']//div[@class='label-title'][normalize-space()='Tempat Lahir']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '17. Tab Summary/Konsumen' + '/' + 'Konsumen (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Konsumen' + '/' + 'Konsumen (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='pekerjaan']//div[@class='doc-img-container ng-star-inserted']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '17. Tab Summary/Konsumen' + '/' + 'Konsumen (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Konsumen' + '/' + 'Konsumen (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='kartuKeluarga']//div[@class='doc-img-container ng-star-inserted']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '17. Tab Summary/Konsumen' + '/' + 'Konsumen (4)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Konsumen' + '/' + 'Konsumen (4)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='kepemilikanRekening']//div[@class='label-title'][normalize-space()='NIK']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '17. Tab Summary/Konsumen' + '/' + 'Konsumen (5)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Konsumen' + '/' + 'Konsumen (5)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[2]//*[@class='ac-title display']"]))
 
 // FAP
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[3]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '18. Tab Summary/FAP' + '/' + 'FAP (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/FAP' + '/' + 'FAP (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='mt-3']//div[@class='label-title'][normalize-space()='Kode Pos']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '18. Tab Summary/FAP' + '/' + 'FAP (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/FAP' + '/' + 'FAP (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[3]//*[@class='ac-title display']"]))
 
 // General
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[4]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '19. Tab Summary/General' + '/' + 'General (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/General' + '/' + 'General (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[4]//*[@class='ac-title display']"]))
 
 // Contact Person dan Penjamin
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[5]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '20. Tab Summary/ECN' + '/' + 'ECN (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/ECN' + '/' + 'ECN (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='row mb-3 row-gap-2 ng-star-inserted']//div[@class='label-title'][normalize-space()='Kecamatan']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '20. Tab Summary/ECN' + '/' + 'ECN (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/ECN' + '/' + 'ECN (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[5]//*[@class='ac-title display']"]))
 
 // Matching Result
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[6]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '21. Tab Summary/Matching' + '/' + 'Matching Result (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Matching' + '/' + 'Matching Result (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[6]//*[@class='ac-title display']"]))
 
 // Collateral
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[7]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '22. Tab Summary/Collateral' + '/' + 'Collateral (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Collateral' + '/' + 'Collateral (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Pengajuan Chasis & Karoseri')]"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '22. Tab Summary/Collateral' + '/' + 'Collateral (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Collateral' + '/' + 'Collateral (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[7]//*[@class='ac-title display']"]))
 
 // Loan Data
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[8]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '23. Tab Summary/Loan Dara' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Dara' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//tab[@class='active tab-pane']//div[@class='label-title'][normalize-space()='Tipe Asuransi']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '23. Tab Summary/Loan Data' + '/' + 'Loan Data (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Data' + '/' + 'Loan Data (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[normalize-space()='Nominal Biaya']"]), 0)
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '23. Tab Summary/Loan Data' + '/' + 'Loan Data (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Data' + '/' + 'Loan Data (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[8]//*[@class='ac-title display']"]))
 
 // Penyimpangan
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[9]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '24. Tab Summary/Penyimpangan' + '/' + 'Penyimpangan (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Penyimpangan' + '/' + 'Penyimpangan (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[9]//*[@class='ac-title display']"]))
 
 // Submit Pengajuan
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Submit Pengajuan ']"]))
-//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[@_ngcontent-ng-c2833372923=''])[2]"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()=' Submit Pengajuan ']"]))
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[@_ngcontent-ng-c2833372923=''])[2]"]))
 
 // Submit Berhasil

@@ -115,8 +115,7 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//textarea[@
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//button[text()=' Simpan ']"]))
 
 // --- Screenshoot ---
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '14. Tab Penyimpangan + '/' + Penyimpangan (1)') + '.png', FailureHandling.OPTIONAL)
-
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '15. Tab Penyimpangan' + '/' + 'Penyimpangan (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 // Selanjutnya
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//button[text()=' Selanjutnya '])[3]"]))

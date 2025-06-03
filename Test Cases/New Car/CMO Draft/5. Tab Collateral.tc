@@ -13,7 +13,7 @@
          <iterationType>SPECIFIC</iterationType>
          <value>1</value>
       </iterationEntity>
-      <testDataId>Data Files/Sprint3Matrix</testDataId>
+      <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
@@ -118,27 +118,27 @@
       <variableId>7daad398-03d2-4c6d-9033-f2604e0adbbf</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>pengajuanChassis</value>
       <variableId>1b160d4a-3b94-4360-814e-4e10cb71a80a</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_NamaDealerKaroseri</value>
       <variableId>db4f72a3-46a6-43ff-8adb-45ca212f7c1b</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_CabangDealerKaroseri</value>
       <variableId>1d56031f-52d2-40df-8d45-93993b30e969</variableId>
    </variableLinks>
    <variableLinks>
-      <testDataLinkId></testDataLinkId>
-      <type>DEFAULT</type>
-      <value></value>
+      <testDataLinkId>18f0306d-e742-4a3c-89a7-f57b927357dc</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>Cl_HargaKaroseri</value>
       <variableId>48e190b5-b37c-40bc-909d-aa2a33d255d5</variableId>
    </variableLinks>
    <variable>

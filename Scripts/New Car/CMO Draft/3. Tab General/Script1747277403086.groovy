@@ -44,6 +44,7 @@ String baseDir = System.getProperty('user.dir')
 WebDriver driver = DriverFactory.getWebDriver()
 String buktiSegmentasiPath = "${userDir}${GlobalVariable.buktiSegmentasiPath}".replace("/", "\\")
 
+
 // TAB GENERAL
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[normalize-space()='General']"]));
 
@@ -52,30 +53,32 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[normal
 
 // --- Membership ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='${G_Membership}']"]));
-	if (G_Membership == 'Solitaire' && G_Membership == 'Prioritas') {
+	if (G_Membership in ['Solitaire', 'Prioritas']) {
+		WebUI.delay(2)
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='lamaMembership']"]), G_LamaMembership);
 	}
 	
 // --- Jenis Debitur ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[normalize-space()='${G_JenisDebitur}']"]));
 	if (G_JenisDebitur != 'Non Debitur') {
+		WebUI.delay(2)
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='plafondBca']"]), G_Plafond);
 	}
 	
 // --- Sales Type ---
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='salesType']"]));
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='searchInput']"]), G_SalesType);
-WebUI.delay(5)
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='salesTypeName']"]));
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[2]"]), G_SalesType);
+WebUI.delay(1)
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
 
 // --- Sales Office ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Sales Office')]"]));
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='searchInput']"]), G_SalesOffice);
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[2]"]), G_SalesOffice);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
 
 // --- Sales Agent
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Sales Agent')]"]));
-WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='searchInput']"]), G_SalesAgent);
+WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[2]"]), G_SalesAgent);
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
 
 // --- Bukti Segmentasi
@@ -89,10 +92,12 @@ WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id=
 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='cabangPerekomendasi']"]), G_Cabang);
 
 // --- Screeenshoot ---
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '10. Tab General + '/' + General (1)') + '.png', FailureHandling.OPTIONAL)
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='namaPerekomendasi']"]), 0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '10. Tab General + '/' + General (2)') + '.png', FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Input Data General')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '10. Tab General' + '/' + 'General (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Sales Agent')]"]), 0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '10. Tab General' + '/' + 'General (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 // --- Selanjutnya ---
-WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='pengajuan-content overflow-auto ng-star-inserted']//div[@class='col-8 pl-2']"]));
+WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='pengajuan-content overflow-auto ng-star-inserted']//div[@class='col-8 pl-2'])[2]"]));
 

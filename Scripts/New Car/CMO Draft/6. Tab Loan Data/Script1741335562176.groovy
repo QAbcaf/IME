@@ -100,19 +100,40 @@ switch(JenisPengajuan) {
 				 break;
 		 }
 
-if(L_SelfCover == 'No') {
+	if(L_SelfCover == 'Yes') {
+		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[contains(., 'Self Cover')]"]))
+	}
 	// Asuransi Mobil
+	// ---  Car Insurance Corp  ---
 	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Car Insurance Corp']"]), 0)
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Car Insurance Corp']"]))
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='slide-up show']//*[text()='$L_CarInsuranceCorp']"]))
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[2]"]), L_CarInsuranceCorp);
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	
+	// ---  Car Insurance Branch  ---
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Car Insurance Branch']"]))
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[2]"]), L_CarInsuranceBranch);
+	WebUI.delay(2)
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
 	
 	// Detail Asuransi Mobil
-	// All
+	// ---  Tipe Asuransi  ---
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//*[text()='Tipe Asuransi'])[1]"]))
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[@class='slide-up show']//*[@class='slide-up-content']/div//strong[text()='$L_BaruTipeAsuransi']"]))
-
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[3]"]), L_BaruTipeAsuransi);
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	
+	// ---  TJH  ---
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='undefined'])[4]"]))
+//	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[3]"]), L_TJH);
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	
+	// ---  Nominal Deduction & %  ---
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nominalDeduction']"]), L_DetailAsuransiNominalDeduction)
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='percentDeduction']"]), L_DetailAsuransiNominalDeductionPersen)
+	
+	// ---  Radio Button RSCC & RSMB  ---
 	switch(L_BaruDetailAsuransiCheck) {
 		case 'RSCC':
 			WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@formcontrolname='rscc']/following-sibling::span)[1]"]))
@@ -127,40 +148,31 @@ if(L_SelfCover == 'No') {
 		default:
 			break;
 	}
-	
-	//--- TJH ---
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='TJH']"]))
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@id='searchInput'])[3]"]), L_TJH);
-	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
-	
-	// --- Nominal Deduction ---
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='nominalDeduction']"]), L_BaruDetailOTR)
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='percentDeduction']"]), L_BaruNominalDeduction)
+
 	
 	switch(L_BaruDetailLoanType) {
 		case 'Prepaid':
-			WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@formcontrolname='paymentType' and @value='0'])[1]"]))
-			break;
+		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='paymentTypeProvisi' and @value='0']"]))
+		break;
 		case 'On Loan':
-			WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "(//input[@formcontrolname='paymentType' and @value='1'])[1]"]))
-			break;
+		WebUI.check(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='paymentTypeProvisi' and @value='1']"]))
+		break;
 	}
 	
-	//TLP ditambahkan pop up
-	if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]), 10, FailureHandling.OPTIONAL)) {
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]))
-	}
-
-		
+//	//TLP ditambahkan pop up
+//	if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]), 10, FailureHandling.OPTIONAL)) {
+//		WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]))
+//	}
+	
 	// --- Cover Mundur ---
 	if(L_CoverMundur == 'Yes') {
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[normalize-space()='Cover Mundur']"]))
-		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='periodeStart']"]), 0)
 		if(!L_PeriodeStartCoverMundur && L_PeriodeEndCoverMundur == '') {
 			// Auto set tanggal dari app
 		} else {
+			WebUI.delay(5)
 			// Periode Start
-			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='periodeStart']"]))
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='periodeStart']"]))
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[normalize-space()='2025']"]))
 			
 			String[] monthNames = ["", "Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]
@@ -190,7 +202,7 @@ if(L_SelfCover == 'No') {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//td[not(contains(@class,'is-other-month'))]//span[normalize-space()='" + day + "']"]))
 			
 			// Periode End
-			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='periodeEnd']"]))
+			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@formcontrolname='periodeEnd']"]))
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//span[normalize-space()='2025']"]))
 			
 			String[] DOBEndComponents = L_PeriodeEndCoverMundur.split("/")
@@ -219,18 +231,27 @@ if(L_SelfCover == 'No') {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//td[not(contains(@class,'is-other-month'))]//span[normalize-space()='" + dayEnd + "']"]))
 		}
 	}
-} 
-		 
+ 
+
+	WebUI.delay(10)
+//	WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Maskapai Asuransi']"]), 0)
 	// Credit Protection
-	// --- Maskapai Asuransi ---
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Maskapai Asuransi']"]))
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='slide-up show']//*[text()='$L_MaskapaiAsuransi']"]))
+	// ---  Maskapai Asuransi  ---
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Maskapai Asuransi']"]));
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='$L_MaskapaiAsuransi'])"]));
 		  
-	// --- Branch ---
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch']"]))
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_Branch'])[1]"]))
-		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='capture-option']"]))
-		WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath);
+	// ---  Branch  ---
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//*[text()='Branch']"]))
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//strong[text()='$L_Branch'])"]));
+//	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//*[text()='$L_Branch'])[1]"]))
+	
+	// ---  Upload CP  --
+	WebUI.delay(2)
+	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='capture-option']"]))
+	WebUI.delay(2)
+	WebUI.uploadFile(findTestObject('Object Repository/xpath', ['xpath' : "//span[text()='Upload File']/preceding-sibling::input"]), bpkbPath, FailureHandling.STOP_ON_FAILURE);
 		  
 		  /*
 		  // Sudah ada datanya
@@ -273,7 +294,6 @@ if(L_SelfCover == 'No') {
 			 break;
 		 }
 		 
-		
 		 
 		 if(L_BaruAsuransiLainnyaType == 'TLP') {
 			 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='modal-body']//*[text()='Upload File']"]))
@@ -306,9 +326,13 @@ if(L_SelfCover == 'No') {
 		 }
 		 
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Simpan']"]))
-		 WebUI.delay(1)
+		 WebUI.delay(2)
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[text()='Hitung']"]))
 		 WebUI.delay(15)
+		 
+		 // OS PH Manual
+		 String L_OSPH = WebUI.getText(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='O/S PH Sistem']/following-sibling::div"]))
+		 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='osphManual']"]), L_OSPH)
 		 
 		 // --- Lampiran Loan Data ---
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='d-flex justify-content-between']//button[@class='btn-img ng-star-inserted']//img"]))
@@ -316,17 +340,27 @@ if(L_SelfCover == 'No') {
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//button[normalize-space()='Simpan']"]))
 		 WebUI.delay(5)
 		 
-
-		 // OS PH Manual
-		 String L_OSPH = WebUI.getText(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='O/S PH Sistem']/following-sibling::div"]))
-		 WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='osphManual']"]), L_OSPH)
+		 //--------Screenshot--------
+		 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Data Pengajuan')]"]),0);
+		 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 		 
-		 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '18 Tab Loan Data') + '.png', FailureHandling.STOP_ON_FAILURE);
+		 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='biayaAdmin']"]),0);
+		 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+			 
+		 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Detail Asuransi Mobil')]"]),0);
+		 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
+		 
+		 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Asuransi Lainnya')]"]),0);
+		 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (4)') + '.png', FailureHandling.STOP_ON_FAILURE)
+		 
+		 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Hasil Simulasi')]"]),0);
+		 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (5)') + '.png', FailureHandling.STOP_ON_FAILURE)
+		 
+		 // ---  Selanjutnya  ---
 		 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-loan//button[text()=' Selanjutnya ']"]))
 		 WebUI.delay(3)
-		 WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathAplBaru)) + '/' + konsumen  + '/' + '18 Tab Loan Data Selanjutnya') + '.png', FailureHandling.STOP_ON_FAILURE);
-		
-		break;
+		 break;
+		 
 	case 'Simulasi':
 		// Paket DP
 		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='paketDp']"]), L_PaketDP)
@@ -340,7 +374,7 @@ if(L_SelfCover == 'No') {
 		
 		if (WebUI.verifyElementPresent(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]), 10, FailureHandling.OPTIONAL)) {
 			WebUI.click(findTestObject('Object Repository/xpath', ['xpath': "//button[contains(text(),'OK')]"]))
-			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '36. Tab Loan Data - pop up tlp') + '.png', FailureHandling.OPTIONAL)
+			WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Pop Up TLP') + '.png', FailureHandling.OPTIONAL)
 		}
 		
 		
@@ -353,24 +387,26 @@ if(L_SelfCover == 'No') {
 		
 		// OS PH Manual
 		String L_OSPH = WebUI.getText(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='O/S PH Sistem']/following-sibling::div"]))
-		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='osphManual']"]), L_OSPH)                                                       
+		WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='osphManual']"]), L_OSPH) 
+		WebUI.delay(4)                                                      
 		
 		//--------Screenshot--------
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Data Pengajuan')]"]),0);
-		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '13. Tab Loan Data + '/' + Loan Data (1)') + '.png', FailureHandling.OPTIONAL)
+		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 		
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='biayaAdmin']"]),0);
-		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '13. Tab Loan Data + '/' + Loan Data (2)') + '.png', FailureHandling.OPTIONAL)
-		
+		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
+			
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Detail Asuransi Mobil')]"]),0);
-		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '13. Tab Loan Data + '/' + Loan Data (3)') + '.png', FailureHandling.OPTIONAL)
+		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
 		
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Asuransi Lainnya')]"]),0);
-		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '13. Tab Loan Data + '/' + Loan Data (4)') + '.png', FailureHandling.OPTIONAL)
+		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (4)') + '.png', FailureHandling.STOP_ON_FAILURE)
 		
 		WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Hasil Simulasi')]"]),0);
-		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '13. Tab Loan Data + '/' + Loan Data (5)') + '.png', FailureHandling.OPTIONAL)
+		WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '14. Tab Loan Data' + '/' + 'Loan Data (5)') + '.png', FailureHandling.STOP_ON_FAILURE)
 		
+		// ---  Selanjutnya  ---
 		WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-loan//button[text()=' Selanjutnya ']"]))
 		WebUI.delay(3)
 		break;

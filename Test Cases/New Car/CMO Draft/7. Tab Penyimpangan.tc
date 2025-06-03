@@ -13,7 +13,7 @@
          <iterationType>SPECIFIC</iterationType>
          <value>2</value>
       </iterationEntity>
-      <testDataId>Data Files/Sprint3Matrix</testDataId>
+      <testDataId>Data Files/Sprint2Matrix</testDataId>
    </testDataLinks>
    <variableLinks>
       <testDataLinkId>4c97ed08-7a49-48cc-8713-e78e06ea88a3</testDataLinkId>

@@ -94,22 +94,23 @@ if (pengajuanChassis == 'Ya') {
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[contains(text(),'Cabang Dealer Karoseri')]"]))
 	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='dealersearchInput']"]), Cl_CabangDealerKaroseri)
 	WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@class='slide-up show']//strong)[1]"]));
+	WebUI.delay(3)
 	
 	// --- Harga Karoseri ---
-	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='harga']"]), Cl_HargaKaroseri);
+	WebUI.setText(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='chassisKaroseriHarga']"]), Cl_HargaKaroseri);
 }
 
 //------Screenshot------
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "(//div[@id='dealerMain'])[1]"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '12. Tab Collateral + '/' + Collateral (1)') + '.png', FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//strong[contains(text(),'Dealer')]"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '13. Tab Collateral' + '/' + 'Collateral (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[@id='Tipe']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '12. Tab Collateral + '/' + Collateral (2)') + '.png', FailureHandling.OPTIONAL)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '13. Tab Collateral' + '/' + 'Collateral (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 
-WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-collateral//button[text()=' Selanjutnya ']"]),0);
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '12. Tab Collateral + '/' + Collateral (3)') + '.png', FailureHandling.OPTIONAL)
+WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//label[@class='rb-container text-muted w-50 mb-0'][normalize-space()='Ya']"]),0);
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '13. Tab Collateral' + '/' + 'Collateral (3)') + '.png', FailureHandling.STOP_ON_FAILURE)
 
-//------Screenshot------
 
+// --- Selanjutnya ---
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-form-collateral//button[text()=' Selanjutnya ']"]))
 WebUI.delay(3)

@@ -35,45 +35,55 @@ String baseDir = System.getProperty('user.dir')
 // Tab Konsumen
 //Map<String, Object> variableMap1 = [
 //	'konsumen': konsumen,
-//	'status': K_Status,
-//	'tipe_dokumen': K_TipeDokumen,
-//	'pekerjaan_k': K_Pekerjaan,
-//	'kode_ekonomi': K_KodeEkonomi,
-//	'nama_perusahaan': K_NamaPerusahaan,
-//	'jabatan': K_Jabatan,
-//	'tahun_berdiri': K_TahunBerdiri,
-//	'jenis_usaha': K_JenisUsaha,
-//	'total_penghasilan_k': K_TotalPenghasilan,
-//	'pekerjaan_pasangan': K_PekerjaanPasangan,
-//	'total_penghasilan_pasangan': K_TotalPenghasilanPasangan,
-//	'tipe_kk': K_TipeKK,
-//	'pendidikan_terakhir': K_PendidikanTerakhir,
-//	'tipe_bank': K_TipeBank,
-//	'no_rek': K_NoRek,
-//	'nama_rek': K_NamaRek,
-//	'pembayaran': K_Pembayaran,
-//	'autodebet_orglain': K_AutoDebetOrangLain,
-//	'rek_autodebet': K_RekAutoDebet,
-//	'nama_autodebet': K_NamaAutoDebet,
-//	'nik_autodebet': K_NikAutoDebet,
-//	'hubungan_autodebet': K_HubAutoDebet,
-//	'statusKepemilikanRumah': K_StatusKepemilikanRumah,
-//	'status_rumah': K_StatusRumah,
-//	'NPWP_Nomor' : K_nomorNPWP,
-//	'PengajuanPemohon' : K_PengajuanPemohon,
-//	'BaruNPWPMilik' : K_NpwpMilik,
-//	'lamaTahunBekerja' : K_lamaTahunBekerja,
-//	'lamaBulanBekerja' : K_lamaBulanBekerja,
+//	'K_Status': K_Status,
+//	'K_TipeDokumen': K_TipeDokumen,
+//	'K_Pekerjaan': K_Pekerjaan,
+//	'K_KodeEkonomi': K_KodeEkonomi,
+//	'K_NamaPerusahaan': K_NamaPerusahaan,
+//	'K_Jabatan': K_Jabatan,
+//	'K_TahunBerdiri': K_TahunBerdiri,
+//	'K_JenisUsaha': K_JenisUsaha,
+//	'K_TotalPenghasilan': K_TotalPenghasilan,
+//	'K_PekerjaanPasangan': K_PekerjaanPasangan,
+//	'K_TotalPenghasilanPasangan': K_TotalPenghasilanPasangan,
+//	'K_TipeKK': K_TipeKK,
+//	'K_PendidikanTerakhir': K_PendidikanTerakhir,
+//	'K_TipeBank': K_TipeBank,
+//	'K_NoRek': K_NoRek,
+//	'K_NamaRek': K_NamaRek,
+//	'K_Pembayaran': K_Pembayaran,
+//	'K_AutoDebetOrangLain': K_AutoDebetOrangLain,
+//	'K_RekAutoDebet': K_RekAutoDebet,
+//	'K_NamaAutoDebet': K_NamaAutoDebet,
+//	'K_NikAutoDebet': K_NikAutoDebet,
+//	'K_HubAutoDebet': K_HubAutoDebet,
+//	'K_StatusKepemilikanRumah': K_StatusKepemilikanRumah,
+//	'K_StatusRumah': K_StatusRumah,
+//	'K_nomorNPWP' : K_nomorNPWP,
+//	'K_PengajuanPemohon' : K_PengajuanPemohon,
+//	'K_NpwpMilik' : K_NpwpMilik,
+//	'K_lamaTahunBekerja' : K_lamaTahunBekerja,
+//	'K_lamaBulanBekerja' : K_lamaBulanBekerja,
 //	'K_umkm' : K_umkm,
-//	'lamaTahunBekerjaPasangan':K_lamaTahunBekerjaPasangan,
-//	'lamaBulanBekerjaPasangan':K_lamaBulanBekerjaPasnagan,
-//	'totalMutasiDebit' : K_totalMutasiDebit,
-//	'totalMutasiKredit' : K_totalMutasiKredit,
-//	'saldoMengendap': K_saldoMengendap,
-//	'luasTanah': K_luasTanah,
-//	'luasBangunan': K_luasBangunan,
-//	'deskripsiPekerjaan': K_deskripsiPekerjaan,
-//	'deskripsiPekerjaanPasangan': K_deskripsiPekerjaanPasangan,
+//	'K_lamaTahunBekerjaPasangan':K_lamaTahunBekerjaPasangan,
+//	'K_lamaBulanBekerjaPasnagan':K_lamaBulanBekerjaPasnagan,
+//	'K_totalMutasiDebit' : K_totalMutasiDebit,
+//	'K_totalMutasiKredit' : K_totalMutasiKredit,
+//	'K_saldoMengendap': K_saldoMengendap,
+//	'K_luasTanah': K_luasTanah,
+//	'K_luasBangunan': K_luasBangunan,
+//	'K_deskripsiPekerjaan': K_deskripsiPekerjaan,
+//	'K_deskripsiPekerjaanPasangan': K_deskripsiPekerjaanPasangan,
+//	'K_alamatPerusahaan' : K_alamatPerusahaan,
+//	'K_kodePosPerusahaan' : K_kodePosPerusahaan,
+//	'K_noTlpnPerusahaan' : K_noTlpnPerusahaan,
+//	'K_NamaPerusahaanPasangan' : K_NamaPerusahaanPasangan,
+//	'K_JabatanPasangan' : K_JabatanPasangan,
+//	'K_TahunPerusahaanPasangan' : K_TahunPerusahaanPasangan,
+//	'K_JenisUsahaPasangan' : K_JenisUsahaPasangan,
+//	'K_AlamatPerusahaanPasangan': K_AlamatPerusahaanPasangan,
+//	'K_KodePosPasangan' : K_KodePosPasangan,
+//	'K_NomorTeleponPasangan' : K_NomorTeleponPasangan,
 //]
 //
 //List<String> variablesToPass1 = []
@@ -92,36 +102,39 @@ String baseDir = System.getProperty('user.dir')
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/1. Tab Konsumen'), variables1, FailureHandling.CONTINUE_ON_FAILURE)
 
 //Tab FAP
-Map<String, Object> variableMap2 = [
-	'konsumen': konsumen,
-	'nama_ibu_kandung': F_NamaIbuKandung,
-	'lama_tahun': F_LamaTahun,
-	'lama_bulan': F_LamaBulan,
-	'jumlah_tanggungan': F_JumlahTanggungan,
-	'kode_area': F_KodeArea,
-	'nomor_telepon': F_NomorTelepon,
-	'namaSID' : F_NamaSID,
-	'emailSama' : F_EmailSama,
-	'tujuanPembiayaan' : F_tujuanPembiayaan,
-]
+//Map<String, Object> variableMap2 = [
+//	'konsumen': konsumen,
+//	'F_NamaIbuKandung': F_NamaIbuKandung,
+//	'F_LamaTahun': F_LamaTahun,
+//	'F_LamaBulan': F_LamaBulan,
+//	'F_JumlahTanggungan': F_JumlahTanggungan,
+//	'F_KodeArea': F_KodeArea,
+//	'F_NomorTelepon': F_NomorTelepon,
+//	'F_NamaSID' : F_NamaSID,
+//	'F_Email' : F_Email,
+//	'F_EmailSama' : F_EmailSama,
+//	'F_tujuanPembiayaan' : F_tujuanPembiayaan,
+//	'F_NoHP' : F_NoHP,
+//	'F_Prefix' : F_Prefix,
+//]
+//
+//List<String> variablesToPass2 = []
+//for (String columnHeader : variableMap2.keySet()) {
+//	Object value = variableMap2.get(columnHeader)
+//	if (value != null) {
+//		variablesToPass2.add(columnHeader)
+//	}
+//}
+//
+//Map<String, Object> variables2 = [:]
+//for (String variableName : variablesToPass2) {
+//	variables2.put(variableName, variableMap2.get(variableName))
+//}
+//
+//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2. Tab FAP'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
 
-List<String> variablesToPass2 = []
-for (String columnHeader : variableMap2.keySet()) {
-	Object value = variableMap2.get(columnHeader)
-	if (value != null) {
-		variablesToPass2.add(columnHeader)
-	}
-}
 
-Map<String, Object> variables2 = [:]
-for (String variableName : variablesToPass2) {
-	variables2.put(variableName, variableMap2.get(variableName))
-}
-
-Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2. Tab FAP'), variables2, FailureHandling.CONTINUE_ON_FAILURE)
-
-
-//// Tab General
+// Tab General
 //Map<String, Object> variableMap3 = [
 //	'konsumen': konsumen,
 //	'G_Segmentasi' : G_Segmentasi,
@@ -149,11 +162,11 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2
 //}
 //
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/3. Tab General'), variables3, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//// Tab CP
+
+// Tab CP
 //Map<String, Object> variableMap4 = [
 //	'konsumen': konsumen,
-//	'status': K_Status,
+//	'K_Status': K_Status,
 //	'CP_Nama': CP_Nama,
 //	'CP_HubKonsumen': CP_HubKonsumen,
 //	'CP_KodePos': CP_KodePos,
@@ -183,19 +196,27 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2
 //}
 //
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/4. Tab ECN dan Penjamin'), variables4, FailureHandling.CONTINUE_ON_FAILURE)
+
+// Tab Matching Result
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
+//WebUI.delay(10)
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPenjamin']//following-sibling::span"], FailureHandling.CONTINUE_ON_FAILURE))
+//WebUI.delay(1)
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"], FailureHandling.CONTINUE_ON_FAILURE))
+//WebUI.delay(10)
+//WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '12. Tab Matching Result Pasangan Konsumen - Penjamin' + '/' + 'Matching (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='Penjamin']"]),0);
 //
-////// Tab Matching Result
-//////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//li//*[text()='Matching Result']"]))
-//////WebUI.delay(10)
-//////
-//////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPenjamin']//following-sibling::span"], FailureHandling.CONTINUE_ON_FAILURE))
-//////WebUI.delay(1)
-//////
-//////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//input[@id='matchingPasanganPenjamin']//following-sibling::span"], FailureHandling.CONTINUE_ON_FAILURE))
-//////WebUI.takeFullPageScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen  + '/' + '27. Tab Matching Result Pasangan Konsumen - Penjamin') + '.png', FailureHandling.CONTINUE_ON_FAILURE);
-//////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"], FailureHandling.CONTINUE_ON_FAILURE))
+////WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//label[contains(.,'Not Match')]/preceding-sibling::input[@type='radio']"], FailureHandling.STOP_ON_FAILURE))
+////WebUI.delay(5)
+//WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '12. Tab Matching Result Pasangan Konsumen - Penjamin' + '/' + 'Matching (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 //
-//// Tab Collateral
+//WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[text()='Pasangan Penjamin']"]),0);
+//WebUI.delay(2)
+//WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//app-tab-matching-result//button[text()=' Selanjutnya ']"], FailureHandling.CONTINUE_ON_FAILURE))
+
+
+// Tab Collateral
 //Map<String, Object> variableMap5 = [
 //	'konsumen': konsumen,
 //	'Cl_Branch': Cl_Branch,
@@ -233,8 +254,8 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2
 //}
 //
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/5. Tab Collateral'), variables5, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//// Tab Loan Data
+
+// Tab Loan Data
 //Map<String, Object> variableMap6 = [ 
 //	'konsumen': konsumen,
 //	'L_DetailTipeAsuransiAll': L_DetailTipeAsuransiAll,
@@ -294,8 +315,8 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2
 //}
 //
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/6. Tab Loan Data'), variables6, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//// Tab Penyimpangan
+
+// Tab Penyimpangan
 //Map<String, Object> variableMap7 = [
 //	'konsumen': konsumen,
 //	'P_Penyimpangan': P_Penyimpangan,
@@ -318,27 +339,27 @@ Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/2
 //}
 //
 //Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/7. Tab Penyimpangan'), variables7, FailureHandling.CONTINUE_ON_FAILURE)
-//
-//
-//// Tab Summary
-//Map<String, Object> variableMap8 = [
-//	'konsumen': konsumen,
-//]
-//
-//List<String> variablesToPass8 = []
-//for (String columnHeader : variableMap8.keySet()) {
-//	Object value = variableMap8.get(columnHeader)
-//	if (value != null) {
-//		variablesToPass8.add(columnHeader)
-//	}
-//}
-//
-//Map<String, Object> variables8 = [:]
-//for (String variableName : variablesToPass8) {
-//	variables8.put(variableName, variableMap8.get(variableName))
-//}
-//
-//Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/8. Tab Summary'), variables8, FailureHandling.CONTINUE_ON_FAILURE)
+
+
+// Tab Summary
+Map<String, Object> variableMap8 = [
+	'konsumen': konsumen,
+]
+
+List<String> variablesToPass8 = []
+for (String columnHeader : variableMap8.keySet()) {
+	Object value = variableMap8.get(columnHeader)
+	if (value != null) {
+		variablesToPass8.add(columnHeader)
+	}
+}
+
+Map<String, Object> variables8 = [:]
+for (String variableName : variablesToPass8) {
+	variables8.put(variableName, variableMap8.get(variableName))
+}
+
+Mobile.callTestCase(TestCaseFactory.findTestCase('Test Cases/New Car/CMO Draft/8. Tab Summary'), variables8, FailureHandling.CONTINUE_ON_FAILURE)
 
 
 // Edit

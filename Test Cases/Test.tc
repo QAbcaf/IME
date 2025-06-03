@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Test</name>
+   <tag></tag>
+   <comment></comment>
+   <recordOption>OTHER</recordOption>
+   <testCaseGuid>735c9683-b663-4006-a06c-3a10ad36f758</testCaseGuid>
+   <testDataLinks>
+      <combinationType>ONE</combinationType>
+      <id>e8d03cc1-c26e-4b54-8386-0100edcd9b06</id>
+      <iterationEntity>
+         <iterationType>ALL</iterationType>
+         <value></value>
+      </iterationEntity>
+      <testDataId>Data Files/Sprint2Matrix</testDataId>
+   </testDataLinks>
+   <variableLinks>
+      <testDataLinkId>e8d03cc1-c26e-4b54-8386-0100edcd9b06</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>konsumen</value>
+      <variableId>aba5d7f2-0c3f-46da-86cc-f5212d250a7d</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e8d03cc1-c26e-4b54-8386-0100edcd9b06</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_PeriodeStartCoverMundur</value>
+      <variableId>6431c6fc-9b77-47d5-9909-09567b9e7d59</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId>e8d03cc1-c26e-4b54-8386-0100edcd9b06</testDataLinkId>
+      <type>DATA_COLUMN</type>
+      <value>L_PeriodeEndCoverMundur</value>
+      <variableId>db8c3392-0482-4d20-8a86-ac18139a71f6</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>aba5d7f2-0c3f-46da-86cc-f5212d250a7d</id>
+      <masked>false</masked>
+      <name>konsumen</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>6431c6fc-9b77-47d5-9909-09567b9e7d59</id>
+      <masked>false</masked>
+      <name>L_PeriodeStartCoverMundur</name>
+   </variable>
+   <variable>
+      <defaultValue>''</defaultValue>
+      <description></description>
+      <id>db8c3392-0482-4d20-8a86-ac18139a71f6</id>
+      <masked>false</masked>
+      <name>L_PeriodeEndCoverMundur</name>
+   </variable>
+</TestCaseEntity>

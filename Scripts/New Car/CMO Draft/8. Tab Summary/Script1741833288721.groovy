@@ -119,7 +119,7 @@ WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='
 
 // Loan Data
 WebUI.click(findTestObject('Object Repository/xpath', ['xpath' : "//div[@class='bcaf-accordion-container single-open']/ac-group[8]/div"]))
-WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Dara' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
+WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Data' + '/' + 'Loan Data (1)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//tab[@class='active tab-pane']//div[@class='label-title'][normalize-space()='Tipe Asuransi']"]), 0)
 WebUI.takeScreenshot((((baseDir + GlobalVariable.screenshotPathNewCarKKB)) + '/' + konsumen + '/' + '16. Tab Summary/Loan Data' + '/' + 'Loan Data (2)') + '.png', FailureHandling.STOP_ON_FAILURE)
 WebUI.scrollToElement(findTestObject('Object Repository/xpath', ['xpath' : "//div[normalize-space()='Nominal Biaya']"]), 0)
